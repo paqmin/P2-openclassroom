@@ -1,0 +1,266 @@
+/* Polices & styles*/
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v26-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/raleway-v26-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v26-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v26-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v26-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v26-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+            }
+
+h1, h2, p, ul, li {
+    
+    color: rgb(0, 0, 0);}
+
+/*media queries*/
+/* Sur les tablettes */
+@media all and (min-width: 768px) and (max-width: 992px) 
+{
+
+}              
+
+/*GENERAL*/
+
+    body {
+            margin: 0;
+            font-family: 'Raleway', 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+    p   {
+        font-size: 13px;
+        }
+        
+    #container {
+            width: 100%;
+            max-width: 1200px;
+        }
+/*HEADER*/
+    #logo{
+            height: 48px;
+            margin: 16px 24px 0 16px;
+        }
+
+    header nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;         
+            }
+
+    header nav ul
+        {
+            display: flex;
+            list-style-type: none;
+            align-items: stretch;
+            
+        }
+
+    header nav li 
+        {
+            margin-top: 16px ;
+            padding-inline-start: 0%;
+        }
+
+    header nav ul a
+        {
+            font-size: 13px;
+            color: #181818;
+            padding: 32px;
+            text-decoration: none;
+            border-top: 3px solid #F2F2F2;
+        }
+        
+    header nav ul a:hover
+        {
+            color: #0065FC;
+            border-top: 3px solid #0065FC;
+        }
+/* RESPOnSIVE HEADER */
+    @media screen and (max-width: 768px)
+    {
+        header nav{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                        
+                }
+
+        header nav ul
+        {
+            display: flex;
+            list-style-type: none;
+            padding-inline-start: 0%;
+            justify-content: space-between;
+            /* width: 100%;*/
+            
+        }
+
+        header nav li 
+        {
+            margin: 0;
+            
+            
+        }
+
+        header nav ul a
+        {
+            font-size: 15px;
+            color: #181818;
+            padding: 20px 60px 10px 60px;
+            text-decoration: none;
+            border-bottom: 3px solid #F2F2F2;
+        }
+        
+        header nav ul a:hover
+        {
+            color: #0065FC;
+            border-top: none;
+            border-bottom: 3px solid #0065FC;
+        }
+    } 
+/*MAIN*/
+/* SECTION FORMULAIRE */
+    #bloc1
+        {
+            margin: 30px;
+        }
+
+    #formulaire{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: no-wrap;  
+            height : 55px;
+            margin : 20px 0px 10px 0;
+            -webkit-box-sizing: border-box; /* Pour les anciennes versions des navigateurs WebKit */
+            -moz-box-sizing: border-box; /* Pour tous les navigateurs Gecko */
+            box-sizing: border-box;
+                }
+    #position{ 
+        top: 2px;
+        position: relative;
+        padding : 15px;
+        border-radius: 15px 0 0 15px ;
+        background-color: #F2F2F2;
+            }
+
+    input[type="search"]{
+            position     : relative;
+            padding      : 15px;
+            border       : 1px solid #F2F2F2;
+            
+                        }
+    ::placeholder {
+            color: rgb(0, 0, 0);
+            font         : bold ;
+                            }
+    button {
+            position     : absolute;
+            padding      : 15px;
+            font         : bold 1em ;
+            color: #F2F2F2;
+            border       : 1px solid #F2F2F2;
+            border-radius: 0 15px 15px 0 ;
+            background   :#0065FC;
+            }
+
+    button:after {
+                content: " Rechercher";
+            }
+    button:hover,button:focus {
+                                outline   : none;
+                                background: #000;
+                                color   : #FFF;
+                            }
+    .cacher{
+                                display: none;
+                        
+                            }
+    /* formulaire de recherche sur les téléphones */
+    @media all and (max-width: 768px)
+    {
+        .cacher{
+            display: inline;
+
+        }
+        button:after {
+            display: none;
+        }
+    } 
+
+
+
+
+
+/*FILTRES*/
+
+#filtres{
+        display : flex;
+        flex-direction: row;
+        max-width: 900px;
+        flex-wrap: wrap;
+        }
+.boutons{
+            display : flex;
+            justify-content: flex-start;
+            border       : 2px solid #f2f2f2;
+            border-radius: 30px 30px 30px 30px ;
+            height: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-right: 20px;
+            box-sizing: content-box;
+            
+            }
+    .moncercle{
+                position:relative;
+                background:#deebff;
+                border-radius:50%;
+                width:50px;
+                height:50px;   
+              }
+    #filtres .boutons i{
+    color: #0065FC;
+    position: absolute;
+    margin: 25px 0px 0px 12px;
+    
+    }
+
+
+#filtres input{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #FFF;
+    border: none;
+    padding-left: 10px;
+    overflow: hidden;
+    
+        }
+ .info{
+            display : flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            
+            
+            }
+.moncerclegris{
+    position:relative;
+    border       : 2px solid #eeeeee;
+    border-radius:50%;
+    width:20px;
+    height:20px;  
+    margin: 10px;
+   }
+.moncerclegris i{
+    color: #0065FC;
+    position: absolute;
+    margin-left: 5px;
+      
+   }
+                        
