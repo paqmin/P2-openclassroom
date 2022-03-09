@@ -125,7 +125,7 @@ h1, h2, p, ul, li {
         }
     } 
 /*MAIN*/
-/* SECTION FORMULAIRE */
+/* SECTION BLOC 1 */
     #bloc1
         {
             margin: 30px;
@@ -246,6 +246,7 @@ h1, h2, p, ul, li {
             display : flex;
             flex-direction: row;
             justify-content: flex-start;
+            flex-wrap: wrap;
             
             
             }
@@ -260,7 +261,80 @@ h1, h2, p, ul, li {
 .moncerclegris i{
     color: #0065FC;
     position: absolute;
-    margin-left: 5px;
+    margin-left: 6px;
       
    }
-                        
+/* BLOC 2 */  
+#bloc2{
+            margin: 30px;
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: wrap;
+        }
+
+.fondgris{
+    background: #f2f2f2;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+/*CARTE*/
+    .card {
+    width: 200px; /*1*/
+    margin: 0px auto; /*2*/
+    background-color: white; /*3*/
+    box-shadow: 0px 5px 20px #999; /*4*/
+    border-radius: 20px;
+  }
+  .card a { /*5*/
+    color: #333; 
+    text-decoration: none;
+  }
+  .card:hover .card-image img { /*6*/
+    width: 160%;
+    filter: grayscale(0);
+  }
+
+  .card-image {
+    height: 100px;/*1*/
+    position: relative;/*2*/
+    overflow: hidden;/*3*/
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+  }
+  .card-image img {
+    width: 150%;/*4*/
+      /*5 - Méthode de centrage en fonction de la taille de l'image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);/*6*/
+      /*7 - Transition */
+    transition-property: filter width; 
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    padding: 20px;
+  }
+.card-body {
+    text-align:left;  /*1*/
+    padding: 15px 20px; /*2*/
+    box-sizing: border-box; /*3*/
+    }
+.card-nom {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: #000;
+        font-size: small;
+      }
+      
+.card-prix, .card-note {
+         font-family: 'Raleway', serif;
+      }
+      
+      
+.card-note {
+    color: #0065FC;     
+      }
+ /* ASIDE*/     
+  
