@@ -14,10 +14,26 @@
 
 h1, h2, p, ul, li {
     
-    color: rgb(0, 0, 0);}
+    color: rgb(0, 0, 0);
+    font-size: clamp(var(--min), var(--val), var(--max));
+}
 
-          
+h1 {
+    --min: 8px; /* minimum value */
+    --val: 4vw; /* preferred value = 5% viewport width */
+    --max: 22px; /* maximum value */
+  }
 
+p   {
+    --min: 5px; /* minimum value */
+    --val: 5vw; /* preferred value = 5% viewport width */
+    --max: 13px;
+    }        
+h2 {
+    --min: 6px; /* minimum value */
+    --val: 5vw; /* preferred value = 5% viewport width */
+    --max: 16px; /* maximum value */
+  }
 /*GENERAL*/
 
     body {
@@ -27,20 +43,20 @@ h1, h2, p, ul, li {
             justify-content: center;
         }
 
-    p   {
-        font-size: 13px;
-        }
+ 
         
     #container {
-        margin: 3%;
-            width: 100%;
-            max-width: 1400px;
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 100%;
+        
         }
+        
 /*HEADER*/
 
     #logo{
             height: 48px;
-            margin: 16px 24px 0 16px;
+            margin-top: 16px;
         }
 
     header nav{
@@ -54,14 +70,15 @@ h1, h2, p, ul, li {
         {
             display: flex;
             list-style-type: none;
-            align-items: stretch;
-            
+            align-items: center;
+            padding-inline-start: 0%;
+
         }
 
     header nav li 
         {
             margin-top: 16px ;
-            padding-inline-start: 0%;
+            
         }
 
     header nav ul a
@@ -78,9 +95,10 @@ h1, h2, p, ul, li {
             color: #0065FC;
             border-top: 3px solid #0065FC;
         }
-/* RESPOnSIVE HEADER */
+/* RESPONSIVE HEADER */
     @media screen and (max-width: 768px)
     {
+        
         header nav{
                 display: flex;
                 flex-direction: column;
@@ -94,15 +112,14 @@ h1, h2, p, ul, li {
             list-style-type: none;
             padding-inline-start: 0%;
             justify-content: space-between;
-            /* width: 100%;*/
+            width: 100%;
             
         }
 
         header nav li 
         {
             margin: 0;
-            
-            
+              
         }
 
         header nav ul a
@@ -111,6 +128,7 @@ h1, h2, p, ul, li {
             color: #181818;
             padding: 20px 60px 10px 60px;
             text-decoration: none;
+            border-top: none;
             border-bottom: 3px solid #F2F2F2;
         }
         
@@ -120,13 +138,11 @@ h1, h2, p, ul, li {
             border-top: none;
             border-bottom: 3px solid #0065FC;
         }
+        
     } 
 /*MAIN*/
 /* SECTION BLOC 1 */
-    #bloc1
-        {
-            
-        }
+    
 
     #formulaire{
             display: flex;
@@ -139,6 +155,9 @@ h1, h2, p, ul, li {
             -moz-box-sizing: border-box; /* Pour tous les navigateurs Gecko */
             box-sizing: border-box;
                 }
+    .mobile{
+            margin-right: 5%;
+        }
     #position{ 
         top: 2px;
         position: relative;
@@ -182,12 +201,19 @@ h1, h2, p, ul, li {
     /* formulaire de recherche sur les téléphones */
     @media all and (max-width: 768px)
     {
+       
         .cacher{
             display: inline;
 
         }
         button:after {
             display: none;
+        }
+        main{
+            margin: 2%;
+        }
+        .mobile{
+            margin-right: 90%;
         }
     } 
 
@@ -200,8 +226,10 @@ h1, h2, p, ul, li {
 #filtres{
         display : flex;
         flex-direction: row;
+        align-items: center;
         max-width: 900px;
         flex-wrap: wrap;
+        
         }
 .boutons{
             display : flex;
@@ -209,8 +237,9 @@ h1, h2, p, ul, li {
             border       : 2px solid #f2f2f2;
             border-radius: 30px 30px 30px 30px ;
             height: 50px;
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 0px;
+            margin-right: 15px;
+            margin-top: 5px;
             padding-right: 20px;
             box-sizing: content-box;
             
@@ -336,7 +365,7 @@ h1, h2, p, ul, li {
   }
 .card-body {
     text-align:left;  
-    padding: 15px 10px; 
+    padding: 15px 10px 10px 10px; 
     box-sizing: border-box; 
     }
 .card-nom {
