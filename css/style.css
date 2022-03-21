@@ -12,7 +12,7 @@
        url('../fonts/raleway-v26-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
             }
 
-h1, h2, p, ul, li {
+h1, h2, p, ul, li , input{
     
     color: rgb(0, 0, 0);
     font-size: clamp(var(--min), var(--val), var(--max));
@@ -25,13 +25,18 @@ h1 {
   }
 
 p   {
-    --min: 5px; /* minimum value */
-    --val: 5vw; /* preferred value = 5% viewport width */
+    --min: 5px; 
+    --val: 5vw; 
     --max: 13px;
     }        
 h2 {
     --min: 6px; /* minimum value */
-    --val: 5vw; /* preferred value = 5% viewport width */
+    --val: 4vw; /* preferred value = 5% viewport width */
+    --max: 16px; /* maximum value */
+  }
+input {
+    --min: 6px; /* minimum value */
+    --val: 4vw; /* preferred value = 5% viewport width */
     --max: 16px; /* maximum value */
   }
 /*GENERAL*/
@@ -98,7 +103,6 @@ h2 {
 /* RESPONSIVE HEADER */
     @media screen and (max-width: 768px)
     {
-        
         header nav{
                 display: flex;
                 flex-direction: column;
@@ -215,6 +219,7 @@ h2 {
         .mobile{
             margin-right: 90%;
         }
+       
     } 
 
 
@@ -227,7 +232,6 @@ h2 {
         display : flex;
         flex-direction: row;
         align-items: center;
-        max-width: 900px;
         flex-wrap: wrap;
         
         }
@@ -244,14 +248,14 @@ h2 {
             box-sizing: content-box;
             
             }
-    .moncercle{
-                position:relative;
+.moncercle{
+            position:relative;
                 background:#deebff;
                 border-radius:50%;
                 width:50px;
                 height:50px;   
               }
-    #filtres .boutons i{
+#filtres .boutons i{
     color: #0065FC;
     position: absolute;
     margin: 25px 0px 0px 12px;
@@ -260,7 +264,7 @@ h2 {
 
 
 #filtres input{
-    font-size: 15px;
+    
     font-weight: bold;
     background-color: #FFF;
     border: none;
@@ -269,12 +273,10 @@ h2 {
     
         }
  .info{
-            display : flex;
+            display : inline-flex;
             flex-direction: row;
             justify-content: flex-start;
-            flex-wrap: wrap;
-            
-            
+
             }
 .moncerclegris{
     position:relative;
@@ -295,21 +297,19 @@ h2 {
             
             display: flex; 
             flex-direction: row; 
-            
             justify-content: space-between;
-            align-items: stretch;
-            flex-wrap: wrap; 
+            
+            /*flex-wrap: wrap-reverse;*/ 
         }
 
-.fondgris{
-    background: #f2f2f2;
-    margin-right: 20px;
-    margin-top: 20px;
-    padding: 2%;
-    border-radius: 20px;
-}
+
 #hebergement{
     flex: 2;
+    background: #f2f2f2;
+    margin-right: 2%;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 20px;
     
 }
 #cartes_hebergements{
@@ -321,12 +321,12 @@ h2 {
 #cartes_populaires{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 /*CARTE HEBERGEMENTS*/
    .card {
-    width: 29%; 
+    width: 200px; 
     margin-right: 2% ; 
     margin-bottom: 2% ; 
     background-color: white; 
@@ -384,42 +384,115 @@ h2 {
  /* ASIDE*/
  #populaires{
      flex: 1;
+     display : flex;
+     flex-direction: column;
+     
+     align-items: center;
+     background: #f2f2f2;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 20px;
+     
  }
+ 
  .titre-populaire{
-    display : flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    
+    display: flex;
+    padding: 3%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: baseline;
     }  
 
+
 .card2 a{ 
-    width: 300px; 
+    width: 300px;
     background-color: white; 
     box-shadow: 0px 5px 20px #999; 
     border-radius: 20px;
     color: #333; 
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
     display: flex;
 
 }
+img[class] { 
+    width: 100%;
+  }
+  
+.object-fit-norm { object-fit: cover }
 .card2-image {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
     overflow: hidden;
-    border-radius: 20px 0px 0px 20px;
   }
   .card2-image img {
     display: block;
-    width: 150%;
     filter: grayscale(1);
     transition: 0.3s;
+    border-radius: 20px 0px 0px 20px;
+    padding: 1.5%;
+    height: 150px;
   }
   .card2-body {
-    flex: 1;
-    padding: 5%;
+    display: flex;
+    padding: 3%;
+    flex-flow: column nowrap;
+    justify-content: space-around;
     }
  .card2:hover .card2-image img { 
     filter: grayscale(0);
       }
- 
+ /*RESPONSIVE BLOC 2*/
+ /* formulaire de recherche sur les téléphones */
+ @media all and (max-width: 768px)
+ {
+     #bloc2{
+            
+    display: flex; 
+    flex-direction: column-reverse; 
+  
+}
+    #populaires{
+  
+       border-radius: 0px;
+      
+       margin: 0;
+    }
+    #hebergement{
+        
+        background: #ffffff;
+        padding: 4%;
+        
+        
+    }
+    #cartes_hebergements{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #container, main{
+        margin: 0px;
+        padding:0px;
+        }
+   
+    #bloc1{
+        margin: 4%;
+    }
+    .card {
+        width: 100%; 
+        margin-bottom: 5% ;
+        
+      }
+    .card2 a {
+        width: 100%; 
+        margin-bottom: 5% ;
+        
+      }
+   
+ } 
+
+
+
+
+
+
