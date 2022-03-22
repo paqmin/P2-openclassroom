@@ -1,7 +1,16 @@
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
+
+    #container, main {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #bloc1 {
+        margin: 4%;
+    }
 
 /* RESPONSIVE HEADER */
-
     header nav {
         display: flex;
         flex-direction: column;
@@ -14,6 +23,7 @@
         padding-inline-start: 0%;
         justify-content: space-between;
         width: 100%;
+        margin-top: 8%;
     }
 
     header nav li {
@@ -36,6 +46,14 @@
     }
 
 /* RESPONSIVE FORMULAIRE */
+    #texte_formulaire{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    #formulaire{
+        width: 100%;
+    }
+
     .cacher {
         display: inline;
     }
@@ -44,10 +62,18 @@
         display: none;
     }
 
+    input[type="search"] {
+        width: 70%;
+    }
+
+    button {
+        border-radius: 15px;
+        left: 300px;   
+    }
+
     .mobile {
         margin-right: 90%;
     }
-
 /*RESPONSIVE BLOC 2*/
 
     #bloc2 {
@@ -71,15 +97,7 @@
         align-items: center;
     }
 
-    #container, main {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    #bloc1 {
-        margin: 4%;
-    }
+    
 
     .card {
         width: 100%;
