@@ -292,7 +292,8 @@ button:hover, button:focus {
     height: 120px;
     position: relative ;
     border-radius: 20px 20px 0px 0px;
-    padding: 3%; 
+    border: 8px solid #FFF;
+   /* padding: 3%; */
     box-sizing: border-box;  
  }
   .card img {
@@ -303,6 +304,7 @@ button:hover, button:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    object-fit: cover;
   }
   
   .card-body {
@@ -476,7 +478,18 @@ div.card-activites::before {
     content: counter(items);
     
   }
-
+  .card-activites:nth-child(4n+1) {
+    height: 300px;
+  }
+  .card-activites:nth-child(4n+2) {
+    height: 120px;
+  }
+  .card-activites:nth-child(4n+3) {
+    height: 100px;
+  }
+  .mcard-activites:nth-child(4n+4) {
+    height: 110px;
+  }
 /* FOOTER */
 footer {
     background-color: #F2F2F2;
