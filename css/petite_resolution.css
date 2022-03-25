@@ -113,6 +113,9 @@
     #bas_page {
         display: flex;
         flex-direction: column;
+        margin-bottom: 5vh;
     }
-
+    footer nav {
+        width: 100%;
+    }
 }

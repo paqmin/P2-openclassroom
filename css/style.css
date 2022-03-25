@@ -37,7 +37,7 @@ input {
 }
 
 ul {
-    --min: 6px;
+    --min: 14px;
     --val: 2vw;
     --max: 14px;
 }
@@ -62,9 +62,10 @@ body {
     margin-top: 16px;
 }
 
-header{
+header {
     margin-bottom: 3%;
 }
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -106,7 +107,7 @@ header nav ul a:hover {
     height: 55px;*/
     margin: 2% 0 3% 0;
     width: 60%;
-   align-content: center;
+    align-content: center;
 }
 
 .mobile {
@@ -144,13 +145,13 @@ button {
     justify-self: center;
 }
 
-.boutonrecherche{
+.boutonrecherche {
     font-weight: 500;
 }
 
 button:after {
     content: " Rechercher";
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 button:hover, button:focus {
@@ -201,7 +202,7 @@ button:hover, button:focus {
 #filtres .boutons i {
     color: #0065FC;
     position: absolute;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -222,7 +223,6 @@ button:hover, button:focus {
 }
 
 .moncerclegris {
-    /*position: relative;*/
     border: 2px solid #eeeeee;
     border-radius: 50%;
     width: 10px;
@@ -232,7 +232,6 @@ button:hover, button:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .moncerclegris i {
@@ -246,27 +245,14 @@ button:hover, button:focus {
     justify-content: space-between;
     margin-top: 2%;
 }
-/*{
-    box-sizing: border-box;
-  }*/
+
 #hebergement {
     flex: 2;
     background: #f2f2f2;
     margin-right: 3%;
     padding: 2%;
     border-radius: 20px;
-   
 }
-
-/*#cartes_hebergements {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    gap:20px;
-    margin-bottom: 8%;
-}*/
 
 /*CARTE HEBERGEMENTS*/
 
@@ -274,29 +260,33 @@ button:hover, button:focus {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-  }
-  .card {
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
     flex: 0 0 30%;
-    margin: 10px;
     background-color: white;
     box-shadow: 2px 2px 20px rgb(226, 223, 223);
-    border-radius: 20px; 
+    border-radius: 20px;
     height: 30%;
-  } 
-  .card a {
+}
+
+.card a {
     color: #333;
     text-decoration: none;
-  }
-  .card-image  {
+}
+
+.card-image {
     overflow: hidden;
-    height: 120px;
-    position: relative ;
+    height: 15vh;
+    position: relative;
     border-radius: 20px 20px 0px 0px;
-    border: 8px solid #FFF;
-   /* padding: 3%; */
-    box-sizing: border-box;  
- }
-  .card img {
+    border: 3px solid #FFF;
+    box-sizing: border-box;
+}
+
+.card img {
     height: auto;
     filter: grayscale(1);
     width: 120%;
@@ -305,75 +295,21 @@ button:hover, button:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
-  }
-  
-  .card-body {
-    padding: 10px;
-    width: 100%;
-  }
-
-  .card:hover .card-image img {
-    filter: grayscale(0);
-}
-
-.card-note {
-    color: #0065FC;
-}
-
-
-
-
-/*.card {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: auto;
-    background-color: white;
-    box-shadow: 2px 2px 20px rgb(226, 223, 223);
-    border-radius: 20px;  
-}
-
-.card a {
-    color: #333;
-    text-decoration: none;
-    width: 100%;
-}
-
-.card-image  {
-   flex:1;
-   overflow: hidden;
-   height: 120px;
-   align-items: center;
-   justify-content: center;
-   
-}
-
-.card-image img  {
-    border-radius: 20px 20px 0px 0px;
-    padding: 3%;
-    filter: grayscale(1);
-    transition: 0.3s;  
-    max-width: 110%;
-    height: auto;
 }
 
 .card-body {
-    display: flex;
-    padding: 5%;
-    text-align: left;
-    flex-flow: column nowrap;
-    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
 }
 
 .card:hover .card-image img {
     filter: grayscale(0);
- 
 }
 
 .card-note {
     color: #0065FC;
 }
-*/
+
 /* ASIDE*/
 #populaires {
     flex: 1;
@@ -400,7 +336,7 @@ button:hover, button:focus {
     align-items: center;
 }
 
-.titre-populaire object{
+.titre-populaire object {
     width: 20px;
     height: 20px;
 }
@@ -412,24 +348,27 @@ button:hover, button:focus {
     box-shadow: 2px 2px 20px rgb(226, 223, 223);
     border-radius: 20px;
     color: #333;
-    text-decoration: none; 
+    text-decoration: none;
 }
-
 
 .card2-image {
     flex: 0 0 40%;
     overflow: hidden;
+    height: 20vh;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    border: 3px solid #FFF;
 }
 
 .card2-image img {
-    display: block;
+    max-height: 160%;
     filter: grayscale(1);
-    transition: 0.3s;
-    border-radius: 20px 0px 0px 20px;
-    padding: 3%;
-    height: 150px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     object-fit: cover;
-    width: 100%;
 }
 
 .card2-body {
@@ -439,7 +378,7 @@ button:hover, button:focus {
     justify-content: space-between;
 }
 
-.card-nom h4{
+.card-nom h4 {
     margin: 0px;
     font-size: 14px;
 }
@@ -449,47 +388,45 @@ button:hover, button:focus {
 }
 
 /*BLOC3-ACTIVITES*/
-#bloc3{
+#bloc3 {
     margin-top: 2%;
 }
-#activites{
-   
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  height: 370px;
-  padding: 0;
-  border: 1px solid #D7DBDD;
-  overflow: auto;
-  counter-reset: items;
+
+#activites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 370px;
+    padding: 0;
 }
-.card-activites{
+
+.card-activites {
     position: relative;
     background-color: white;
     box-shadow: 2px 2px 20px rgb(226, 223, 223);
     border-radius: 20px;
-    margin:0 2% 2% 0;
+    margin: 0 20px 20px 0;
     box-sizing: border-box;
 }
-div.card-activites::before {
-    counter-increment: items;
-    content: counter(items);
-    
-  }
-  .card-activites:nth-child(4n+1) {
-    height: 300px;
-  }
-  .card-activites:nth-child(4n+2) {
-    height: 120px;
-  }
-  .card-activites:nth-child(4n+3) {
-    height: 100px;
-  }
-  .mcard-activites:nth-child(4n+4) {
-    height: 110px;
-  }
+
+.card-activites:nth-child(1), .card-activites:nth-child(4) {
+    flex: 100%;
+}
+
+.card-activites:nth-child(2) {
+    flex: 2;
+}
+
+.card-activites:nth-child(3) {
+    flex: 1;
+}
+
+.card-activites:nth-child(5), .card-activites:nth-child(6) {
+    flex: 1;
+}
+
 /* FOOTER */
 footer {
     background-color: #F2F2F2;
@@ -501,13 +438,13 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    padding: 3% 0 3% 0;
-    margin: 5% auto 0 auto;
+    justify-content: space-between;
+    margin: 0% auto 0 auto;
+    width: 90%;
 }
 
 footer nav {
-    margin-right: 10%;
+    width: 30%;
 }
 
 
@@ -521,7 +458,8 @@ footer nav a {
 
 
 footer ul {
-    padding-left: Opx;
+    padding-left: O;
+    -webkit-padding-start: 0;
     list-style-type: none;
     font-size: 13px;
 }
@@ -534,7 +472,3 @@ footer nav li {
     padding-bottom: 15px;
 
 }
-
-
-  
-
