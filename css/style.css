@@ -402,6 +402,7 @@ button:hover, button:focus {
     height: 47vh;
     padding: 0;
     gap: 20px;
+    
 }
 
 .card-activites {
@@ -412,9 +413,11 @@ button:hover, button:focus {
     border-radius: 20px;
     position: relative;  
     box-sizing: border-box;
+    /*flex-basis: 20%;*/
+    
 }
 
-.card-activites:nth-child(1), .card-activites:nth-child(4) {
+/* .card-activites:nth-child(1), .card-activites:nth-child(4) {
     flex: 100%;
    
 }
@@ -429,7 +432,23 @@ button:hover, button:focus {
 
 .card-activites:nth-child(5), .card-activites:nth-child(6) {
     flex: 1;
+} */
+.card-activites:nth-child(1), .card-activites:nth-child(4) {
+   flex: 100%; 
 }
+
+.card-activites:nth-child(2) {
+    flex:2;
+}
+
+.card-activites:nth-child(3) {
+    flex:1;
+}
+
+.card-activites:nth-child(5), .card-activites:nth-child(6) {
+    flex:1;
+}
+
 .card-activites a {
     color: #333;
     text-decoration: none;
@@ -437,27 +456,28 @@ button:hover, button:focus {
 
 .card3-image {
     overflow: hidden;
-    height: 80%;
+    height: 90%;
     position: relative;
     border-radius: 20px 20px 0px 0px;
     box-sizing: border-box;
-    width: 100%
+    width: 100%;
 }
 
 .card3-image img {
     height: auto;
     filter: grayscale(1);
-    width: 250%;
+    width: 270%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);   
 }
-
-
-.card3-nom h4{
-    padding-left: 20px;
-    font-weight: 800;
+.card3-nom{
+    height: 8vh;
+}
+.card3-nom h5{
+    padding-left: 1vw;
+    font-weight: 600;    
 }
 
 .card-activites:hover .card3-image img {
