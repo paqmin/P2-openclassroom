@@ -58,8 +58,8 @@ body {
 /*HEADER*/
 
 #logo {
-    height: 48px;
-    margin-top: 16px;
+    height: 5vh;
+    margin-top: 5vh;
 }
 
 header {
@@ -81,12 +81,12 @@ header nav ul {
 }
 
 header nav li {
-    margin-top: 16px;
+    margin-top: 5vh;
 }
 
 header nav ul a {
     color: #181818;
-    padding: 28px;
+    padding: 6vh 2vw 0 2vw;
     text-decoration: none;
     border-top: 3px solid #F2F2F2;
 }

@@ -8,7 +8,14 @@
    <link rel="stylesheet" type="text/css" href="css/normalize.css">
    <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="stylesheet" media="all and (max-width: 768px)" href="css/petite_resolution.css" />
-   <link rel="shortcut icon" type="image/png" href="images/icons/favicon_io/favicon-32x32.png"/>
+   <link rel="stylesheet" media="all and (min-width: 768px and max-width:992px)" href="css/tablettes.css" />
+   <link rel="apple-touch-icon" sizes="180x180" href="images/icons/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon/favicon-16x16.png">
+   <link rel="manifest" href="images/icons/favicon/site.webmanifest">
+   <link rel="mask-icon" href="images/icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
 
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/029cb7604a.js" crossorigin="anonymous"></script>
@@ -90,9 +97,31 @@
 
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <img class="object-fit-norm"
+                           <!-- <img class="object-fit-norm"
                               src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                              alt="auberge_cannebiere" />
+                              alt="auberge_cannebiere" /> -->
+                           <!-- <picture>
+                                 <source type="image/png" media="(min-width:1200px)" srcset="images/hebergements/2_large/cannebiere-large.jpg">
+                                 <source type="image/png" media="(min-width:768px)" srcset="images/hebergements/4_small/cannebiere-small.jpg">
+                                 <img class="object-fit-norm" src="images/hebergements/4_small/cannebiere-small.jpg" alt="auberge_cannebiere">
+                              </picture> -->
+                           <picture>
+                              <!-- ordi-->
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/cannebiere-xlarge.jpg 3x,
+                                         images/hebergements/cannebiere-large.jpg 2x,
+                                         images/hebergements/cannebiere-medium.jpg 1x">
+                              <!-- tablettes-->
+                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/cannebiere-xlarge.jpg 3x,
+                                         images/hebergements/cannebiere-large.jpg 2x,
+                                         images/hebergements/cannebiere-medium.jpg 1x">
+                              <!-- mobile-->
+                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/cannebiere-large.jpg 3x,
+                                         images/hebergements/cannebiere-medium.jpg 2x,
+                                         images/hebergements/cannebiere-small.jpg  1x">
+
+                              <img class="object-fit-norm" src="images/hebergements/cannebiere-large.jpg"
+                                 alt="auberge_cannebiere">
+                           </picture>
                         </div>
                         <!-- Corps de la carte -->
                         <div class="card-body">
@@ -117,9 +146,25 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <img class="object-fit-norm"
+                           <!-- <img class="object-fit-norm"
                               src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                              alt="hotel_du_port" />
+                              alt="hotel_du_port" /> -->
+                           <picture>
+                              <!-- ordi-->
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/port-xlarge.jpg 3x,
+                                            images/hebergements/port-large.jpg 2x,
+                                            images/hebergements/port-medium.jpg 1x">
+                              <!-- tablettes-->
+                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/port-xlarge.jpg 3x,
+                                            images/hebergements/port-large.jpg 2x,
+                                            images/hebergements/port-medium.jpg 1x">
+                              <!-- mobile-->
+                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/port-large.jpg 3x,
+                                            images/hebergements/port-medium.jpg 2x,
+                                            images/hebergements/port-small.jpg  1x">
+
+                              <img class="object-fit-norm" src="images/hebergements/port-large.jpg" alt="hotel_du_port">
+                           </picture>
                         </div>
 
                         <!-- Corps de la carte -->
@@ -145,9 +190,26 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <img class="object-fit-norm"
+                           <!-- <img class="object-fit-norm"
                               src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                              alt="hotel_les_mouettes" />
+                              alt="hotel_les_mouettes" /> -->
+                           <picture>
+                              <!-- ordi-->
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/mouettes-xlarge.jpg 3x,
+                                            images/hebergements/mouettes-large.jpg 2x,
+                                            images/hebergements/mouettes-medium.jpg 1x">
+                              <!-- tablettes-->
+                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/mouettes-xlarge.jpg 3x,
+                                            images/hebergements/mouettes-large.jpg 2x,
+                                            images/hebergements/mouettes-medium.jpg 1x">
+                              <!-- mobile-->
+                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/mouettes-large.jpg 3x,
+                                            images/hebergements/mouettes-medium.jpg 2x,
+                                            images/hebergements/mouettes-small.jpg  1x">
+
+                              <img class="object-fit-norm" src="images/hebergements/mouettes-large.jpg"
+                                 alt="hotel_les_mouettes">
+                           </picture>
                         </div>
                         <!-- Corps de la carte -->
                         <div class="card-body">
@@ -172,9 +234,26 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <img class="object-fit-norm"
+                           <!-- <img class="object-fit-norm"
                               src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                              alt="hotel_de_la_mer" />
+                              alt="hotel_de_la_mer" /> -->
+                           <picture>
+                              <!-- ordi-->
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/mer-xlarge.jpg 3x,
+                                            images/hebergements/mer-large.jpg 2x,
+                                            images/hebergements/mer-medium.jpg 1x">
+                              <!-- tablettes-->
+                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/mer-xlarge.jpg 3x,
+                                            images/hebergements/mer-large.jpg 2x,
+                                            images/hebergements/mer-medium.jpg 1x">
+                              <!-- mobile-->
+                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/mer-large.jpg 3x,
+                                            images/hebergements/mer-medium.jpg 2x,
+                                            images/hebergements/mer-small.jpg  1x">
+
+                              <img class="object-fit-norm" src="images/hebergements/mer-large.jpg"
+                                 alt="hotel_de_la_mer">
+                           </picture>
                         </div>
                         <!-- Corps de la carte -->
                         <div class="card-body">
@@ -199,9 +278,26 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <img class="object-fit-norm"
+                           <!-- <img class="object-fit-norm"
                               src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                              alt="auberge_le_panier" />
+                              alt="auberge_le_panier" /> -->
+                           <picture>
+                              <!-- ordi-->
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/panier-xlarge.jpg 3x,
+                                            images/hebergements/panier-large.jpg 2x,
+                                            images/hebergements/panier-medium.jpg 1x">
+                              <!-- tablettes-->
+                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/panier-xlarge.jpg 3x,
+                                            images/hebergements/panier-large.jpg 2x,
+                                            images/hebergements/panier-medium.jpg 1x">
+                              <!-- mobile-->
+                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/panier-large.jpg 3x,
+                                            images/hebergements/panier-medium.jpg 2x,
+                                            images/hebergements/panier-small.jpg  1x">
+
+                              <img class="object-fit-norm" src="images/hebergements/panier-large.jpg"
+                                 alt="auberge_le_panier">
+                           </picture>
                         </div>
                         <!-- Corps de la carte -->
                         <div class="card-body">
@@ -226,9 +322,26 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <img class="object-fit-norm"
+                           <!-- <img class="object-fit-norm"
                               src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                              alt="hotel_chez_amina" />
+                              alt="hotel_chez_amina" /> -->
+                           <picture>
+                              <!-- ordi-->
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/amina-xlarge.jpg 3x,
+                                            images/hebergements/amina-large.jpg 2x,
+                                            images/hebergements/amina-medium.jpg 1x">
+                              <!-- tablettes-->
+                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/amina-xlarge.jpg 3x,
+                                            images/hebergements/amina-large.jpg 2x,
+                                            images/hebergements/amina-medium.jpg 1x">
+                              <!-- mobile-->
+                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/amina-large.jpg 3x,
+                                            images/hebergements/amina-medium.jpg 2x,
+                                            images/hebergements/amina-small.jpg  1x">
+
+                              <img class="object-fit-norm" src="images/hebergements/amina-large.jpg"
+                                 alt="hotel_chez_amina">
+                           </picture>
                         </div>
                         <!-- Corps de la carte -->
                         <div class="card-body">
@@ -263,9 +376,26 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card2-image">
-                           <img class="object-fit-norm"
+                           <!--  <img class="object-fit-norm"
                               src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                              alt="au_coeur_de_l_eau" />
+                              alt="au_coeur_de_l_eau" /> -->
+                           <picture>
+                              <!-- ordi-->
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/soleil-xlarge.jpg 3x,
+                                            images/hebergements/soleil-large.jpg 2x,
+                                            images/hebergements/soleil-medium.jpg 1x">
+                              <!-- tablettes-->
+                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/soleil-xlarge.jpg 3x,
+                                            images/hebergements/soleil-large.jpg 2x,
+                                            images/hebergements/soleil-medium.jpg 1x">
+                              <!-- mobile-->
+                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/soleil-large.jpg 3x,
+                                            images/hebergements/soleil-medium.jpg 2x,
+                                            images/hebergements/soleil-small.jpg  1x">
+
+                              <img class="object-fit-norm" src="images/hebergements/soleil-large.jpg"
+                                 alt="hotel_soleil_le_matin">
+                           </picture>
                         </div>
                         <!-- Corps de la carte -->
                         <div class="card2-body">
@@ -285,14 +415,31 @@
                         </div>
                      </a>
                   </div>
-                  <!--Au coeur de l'eau-->
+                  <!--Au soleil de l'eau-->
                   <div class="card2">
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card2-image">
-                           <img class="object-fit-norm"
+                           <!--  <img class="object-fit-norm"
                               src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                              alt="au_coeur_de_l_eau" />
+                              alt="au_coeur_de_l_eau" /> -->
+                           <picture>
+                              <!-- ordi-->
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/coeur-xlarge.jpg 3x,
+                                            images/hebergements/coeur-large.jpg 2x,
+                                            images/hebergements/coeur-medium.jpg 1x">
+                              <!-- tablettes-->
+                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/coeur-xlarge.jpg 3x,
+                                            images/hebergements/coeur-large.jpg 2x,
+                                            images/hebergements/coeur-medium.jpg 1x">
+                              <!-- mobile-->
+                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/coeur-large.jpg 3x,
+                                            images/hebergements/coeur-medium.jpg 2x,
+                                            images/hebergements/coeur-small.jpg  1x">
+
+                              <img class="object-fit-norm" src="images/hebergements/coeur-large.jpg"
+                                 alt="au_coeur_de_l_eau">
+                           </picture>
                         </div>
                         <!-- Corps de la carte -->
                         <div class="card2-body">
@@ -317,9 +464,26 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card2-image">
-                           <img class="object-fit-norm"
+                           <!-- <img class="object-fit-norm"
                               src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                              alt="hotel_tout_bleu_et_blanc" />
+                              alt="hotel_tout_bleu_et_blanc" /> -->
+                           <picture>
+                              <!-- ordi-->
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/bleu-blanc-xlarge.jpg 3x,
+                                               images/hebergements/bleu-blanc-large.jpg 2x,
+                                               images/hebergements/bleu-blanc-medium.jpg 1x">
+                              <!-- tablettes-->
+                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/bleu-blanc-xlarge.jpg 3x,
+                                               images/hebergements/bleu-blanc-large.jpg 2x,
+                                               images/hebergements/bleu-blanc-medium.jpg 1x">
+                              <!-- mobile-->
+                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/bleu-blanc-large.jpg 3x,
+                                               images/hebergements/bleu-blanc-medium.jpg 2x,
+                                               images/hebergements/bleu-blanc-small.jpg  1x">
+
+                              <img class="object-fit-norm" src="images/hebergements/bleu-blanc-large.jpg"
+                                 alt="hotel_tout_bleu_et_blanc">
+                           </picture>
                         </div>
 
                         <!-- Corps de la carte -->
@@ -350,8 +514,24 @@
                <!--  VIEUX PORT -->
                <div class="card-activites">
                   <div class="card3-image">
-                     <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" />
+                     <!-- <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
+                        alt="hotel_tout_bleu_et_blanc" /> -->
+                     <picture>
+                        <!-- ordi-->
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/vieux-port-xlarge.jpg 3x,
+                                 images/activites/vieux-port-large.jpg 2x,
+                                 images/activites/vieux-port-medium.jpg 1x">
+                        <!-- tablettes-->
+                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/vieux-port-xlarge.jpg 3x,
+                                   images/activites/vieux-port-large.jpg 2x,
+                                   images/activites/vieux-port-medium.jpg 1x">
+                        <!-- mobile-->
+                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/vieux-port-large.jpg 3x,
+                                   images/activites/vieux-port-medium.jpg 2x,
+                                   images/activites/vieux-port-small.jpg  1x">
+
+                        <img class="object-fit-norm" src="images/activites/vieux-port-large.jpg" alt="vieux-port">
+                     </picture>
                   </div>
                   <div class="card3-nom">
                      <h5>Vieux port</h5>
@@ -360,8 +540,24 @@
                <!--  FORT DE POMEGUES -->
                <div class="card-activites">
                   <div class="card3-image">
-                     <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" />
+                     <!-- <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
+                        alt="hotel_tout_bleu_et_blanc" /> -->
+                     <picture>
+                        <!-- ordi-->
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/pomegues-xlarge.jpg 3x,
+                                 images/activites/pomegues-large.jpg 2x,
+                                 images/activites/pomegues-medium.jpg 1x">
+                        <!-- tablettes-->
+                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/pomegues-xlarge.jpg 3x,
+                                   images/activites/pomegues-large.jpg 2x,
+                                   images/activites/pomegues-medium.jpg 1x">
+                        <!-- mobile-->
+                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/pomegues-large.jpg 3x,
+                                   images/activites/pomegues-medium.jpg 2x,
+                                   images/activites/pomegues-small.jpg  1x">
+
+                        <img class="object-fit-norm" src="images/activites/pomegues-large.jpg" alt="fort-de-pomegues">
+                     </picture>
                   </div>
                   <div class="card3-nom">
                      <h5>Fort de Pomègues</h5>
@@ -370,8 +566,23 @@
                <!--  FRIOUL -->
                <div class="card-activites">
                   <div class="card3-image">
-                     <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" />
+                     <!--  <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
+                        alt="hotel_tout_bleu_et_blanc" /> -->
+                     <picture>
+                        <!-- ordi-->
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/frioul-xlarge.jpg 3x,
+                                 images/activites/frioul-large.jpg 2x,
+                                 images/activites/frioul-medium.jpg 1x">
+                        <!-- tablettes-->
+                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/frioul-xlarge.jpg 3x,
+                                   images/activites/frioul-large.jpg 2x,
+                                   images/activites/frioul-medium.jpg 1x">
+                        <!-- mobile-->
+                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/frioul-large.jpg 3x,
+                                   images/activites/frioul-medium.jpg 2x,
+                                   images/activites/frioul-small.jpg  1x">
+                        <img class="object-fit-norm" src="images/activites/frioul-large.jpg" alt="iles-du-frioul">
+                     </picture>
                   </div>
                   <div class="card3-nom">
                      <h5>Iles du Frioul</h5>
@@ -380,8 +591,24 @@
                <!--  CALANQUES -->
                <div class="card-activites">
                   <div class="card3-image">
-                     <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" />
+                     <!-- img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
+                        alt="hotel_tout_bleu_et_blanc" /> -->
+                     <picture>
+                        <!-- ordi-->
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/calanques-xlarge.jpg 3x,
+                                 images/activites/calanques-large.jpg 2x,
+                                 images/activites/calanques-medium.jpg 1x">
+                        <!-- tablettes-->
+                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/calanques-xlarge.jpg 3x,
+                                   images/activites/calanques-large.jpg 2x,
+                                   images/activites/calanques-medium.jpg 1x">
+                        <!-- mobile-->
+                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/calanques-large.jpg 3x,
+                                   images/activites/calanques-medium.jpg 2x,
+                                   images/activites/calanques-small.jpg  1x">
+                        <img class="object-fit-norm" src="images/activites/calanques-large.jpg"
+                           alt="parc-national-calanques">
+                     </picture>
                   </div>
                   <div class="card3-nom">
                      <h5>Parc National des Calanques</h5>
@@ -390,8 +617,24 @@
                <!--  NOTRE DAME DE LAGARDE -->
                <div class="card-activites">
                   <div class="card3-image">
-                     <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" />
+                     <!-- <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
+                        alt="hotel_tout_bleu_et_blanc" /> -->
+                     <picture>
+                        <!-- ordi-->
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/lagarde-xlarge.jpg 3x,
+                                           images/activites/lagarde-large.jpg 2x,
+                                           images/activites/lagarde-medium.jpg 1x">
+                        <!-- tablettes-->
+                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/lagarde-xlarge.jpg 3x,
+                                   images/activites/lagarde-large.jpg 2x,
+                                   images/activites/lagarde-medium.jpg 1x">
+                        <!-- mobile-->
+                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/lagarde-large.jpg 3x,
+                                      images/activites/lagarde-medium.jpg 2x,
+                                      images/activites/lagarde-small.jpg  1x">
+                        <img class="object-fit-norm" src="images/activites/lagarde-large.jpg"
+                           alt="Notre-Dame-de-la-Garde">
+                     </picture>
                   </div>
                   <div class="card3-nom">
                      <h5>Notre-Dame-de-la-Garde</h5>
@@ -400,8 +643,23 @@
                <!--  LONGCHAMP-->
                <div class="card-activites">
                   <div class="card3-image">
-                     <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" />
+                     <!-- <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
+                        alt="hotel_tout_bleu_et_blanc" /> -->
+                     <picture>
+                        <!-- ordi-->
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/longchamp-xlarge.jpg 3x,
+                                           images/activites/longchamp-large.jpg 2x,
+                                           images/activites/longchamp-medium.jpg 1x">
+                        <!-- tablettes-->
+                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/longchamp-xlarge.jpg 3x,
+                                   images/activites/longchamp-large.jpg 2x,
+                                   images/activites/longchamp-medium.jpg 1x">
+                        <!-- mobile-->
+                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/longchamp-large.jpg 3x,
+                                      images/activites/longchamp-medium.jpg 2x,
+                                      images/activites/longchamp-small.jpg  1x">
+                        <img class="object-fit-norm" src="images/activites/longchamp-small.jpg" alt="parc-longchamp">
+                     </picture>
                   </div>
                   <div class="card3-nom">
                      <h5>Parc Longchamp</h5>
