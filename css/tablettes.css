@@ -1,18 +1,19 @@
-@media all and (min-width: 768px) and (max-width:992px) {
 
-    #container, main {
+  @media all and (min-device-width:768px) and (max-device-width:992px) {
+      
+   /*  #container, main {
         width: 100%;
         margin: 0px;
         padding: 0px;
         margin-bottom: 5%;
-    }
+    } */
 
     #bloc1 {
         margin: 4%;
     }
 
     /* RESPONSIVE HEADER */
-    header nav {
+    /* header nav {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -47,7 +48,7 @@
     }
 
     /* RESPONSIVE FORMULAIRE */
-    #texte_formulaire {
+   /*  #texte_formulaire {
         margin-top: 10%;
         margin-bottom: 10%;
     }
@@ -75,7 +76,7 @@
 
     .mobile {
         margin-right: 90%;
-    }
+    } */ */
 
     /*RESPONSIVE BLOC 2*/
 
@@ -83,35 +84,22 @@
         display: flex;
         flex-direction: column-reverse;
         margin-bottom: 0;
+        
     }
 
     #populaires {
+        flex:100%;
         border-radius: 0px;
         margin: 0;
     }
 
     #hebergement {
+        flex:100%;
         background: #ffffff;
         padding: 4%;
     }
 
-    #cartes_hebergements {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-    .card {
-        width: 100%;
-        margin-bottom: 5%;
-    }
-
-    .card2 a {
-        width: 100%;
-        margin-bottom: 5%;
-    }
+  
 
     /*RESPONSIVE BLOC 3*/
     #bloc3 {
