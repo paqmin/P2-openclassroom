@@ -24,22 +24,22 @@ h3 {
     --max: 18px;
 }
 h4 {
-    --min: 14px;
-    --val: 4.5vw;
-    --max: 18px;
+    --min: 10px;
+    --val: 4vw;
+    --max: 14px;
     margin: 0;
 }
 
 p {
     --min: 10px;
-    --val: 4.5vw;
-    --max: 16px;
+    --val: 4vw;
+    --max: 14px;
 }
 .card-nom p {
-    margin: 8px 0 12px 0;
+    margin: 4px 0 4px 0;
     --min: 10px;
     --val: 4.1vw;
-    --max: 15px;
+    --max: 13px;
 }
 
 input {
@@ -319,10 +319,14 @@ button:hover, button:focus {
 }
 
 .card-body {
-    padding: 4%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 0 4% 5% 4%;
     width: 100%;
     box-sizing: border-box;
-    height: 44%;
+    height: 40%;
 }
 
 .card:hover .card-image img {
@@ -801,7 +805,6 @@ footer nav li {
         flex: none;
         width: 100%;
         margin-bottom: 5%;
-        
     }
 
     .card2 a {
