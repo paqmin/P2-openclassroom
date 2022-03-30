@@ -2,10 +2,10 @@
 
 h1, h2, h3, h4, p, ul, li, input {
     color: rgb(0, 0, 0);
-    font-size: clamp(var(--min), var(--val), var(--max));
+   /*  font-size: clamp(var(--min), var(--val), var(--max)); */
 }
 
-h1 {
+/* h1 {
     --min: 20px;
     --val: 5vw;
     --max: 24px;
@@ -53,7 +53,7 @@ ul {
     --min: 10px;
     --val: 5vw;
     --max: 16px;
-}
+} */
 
 /*BLOCS GENERAUX*/
 
@@ -256,6 +256,7 @@ button:hover, button:focus {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2.25%;
+    text-decoration: none;
     /* gap: 2.25%; */
 }
 
@@ -406,11 +407,6 @@ button:hover, button:focus {
 }
 
 
-/* .card-nom h4 {
-    margin: 0px;
-    font-size: 14px;
-}
- */
 .card2:hover .card2-image img {
     filter: grayscale(0);
 }
@@ -423,29 +419,45 @@ button:hover, button:focus {
 
 #activites {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     height: 47vh;
     padding: 0;
-    gap: 20px;
-
+    gap: 2vh;
 }
-
-.card-activites {
+#bloc-gauche{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    width: 47%;
+    height: 47vh;
+    padding: 0;
+    gap: 2vh;  
+}
+#bloc-droite{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    width: 47%;
+    height: 47vh;
+    padding: 0;
+    gap: 2vh;  
+}
+.card-activites { 
+    /* width: 100%;  */
     background-color: white;
     box-shadow: 2px 2px 20px rgb(226, 223, 223);
     border-radius: 20px;
     position: relative;
     box-sizing: border-box;
-    width: 23%;
-   
-
+    color: #333;
+    text-decoration: none;  
+    width: 47%;
 }
-
 
 .card-activites:nth-child(1), .card-activites:nth-child(4) {
     flex: 100%;
@@ -463,41 +475,39 @@ button:hover, button:focus {
     flex: 1;
 }
 
-.card-activites a {
-    color: #333;
-    text-decoration: none;
+.grand{
+    height: 85%; 
+}
+.petit{
+    height: 72%; 
 }
 
 .card3-image {
     overflow: hidden;
-    height: 90%;
     position: relative;
     border-radius: 20px 20px 0px 0px;
-    box-sizing: border-box;
-    width: 100%;
+    box-sizing: border-box;  
 }
 
 .card3-image img {
-    height: auto;
     filter: grayscale(1);
-    width: 270%;
+    min-height: 100%;
+    max-width: 280%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.card3-nom {
-    height: 3vh;
+h4.card3-nom {
+    box-sizing: border-box;
     padding: 4%;
+    margin: 0;
+    height: 20vh;
 }
 
-.card3-nom h5 {
-    padding-left: 1vw;
-    font-weight: 600;
-}
 
-.card-activites:hover .card3-image img {
+.card3-image img:hover {
     filter: grayscale(0);
 }
 

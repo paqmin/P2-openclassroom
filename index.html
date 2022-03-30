@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
    <link rel="stylesheet" type="text/css" href="css/normalize.css">
    <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!--  <link rel="stylesheet" type="text/css" media=" (min-device-width:768px) and (max-device-width:992px)" href="css/tablettes.css" />
+   <!--  <link rel="stylesheet" type="text/css" media=" (min-device-width:768px) and (max-device-width:992px)" href="css/tablettes.css" />
    <link rel="stylesheet" type="text/css" media=" (max-width:768px)" href="css/petite_resolution.css" /> -->
    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/favicon/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon/favicon-32x32.png">
@@ -510,37 +510,37 @@
          <section id="bloc3">
             <h1>Activités à Marseille</h1>
             <section id="activites">
+               <section id="bloc-gauche">
                <!--  VIEUX PORT -->
-               <div class="card-activites">
-                  <div class="card3-image">
-                     <!-- <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" /> -->
-                     <picture>
-                        <!-- ordi-->
-                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/vieux-port-xlarge.jpg 3x,
+               <a class="card-activites" href="#">
+                  <div class="card3-image grand">
+                     <img src="images/activites/vieux-port-large.jpg" alt="vieux-port" srcset="images/activites/vieux-port-xlarge.jpg 4846x,
+                                 images/activites/vieux-port-large.jpg 2423w,
+                                 images/activites/vieux-port-medium.jpg 1212w,
+                                 images/activites/vieux-port-small.jpg 589w" sizes="100vw">
+
+                     <!-- <picture>
+                          
+                           <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/vieux-port-xlarge.jpg 3x,
                                  images/activites/vieux-port-large.jpg 2x,
                                  images/activites/vieux-port-medium.jpg 1x">
-                        <!-- tablettes-->
-                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/vieux-port-xlarge.jpg 3x,
+                           
+                           <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/vieux-port-xlarge.jpg 3x,
                                    images/activites/vieux-port-large.jpg 2x,
                                    images/activites/vieux-port-medium.jpg 1x">
-                        <!-- mobile-->
-                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/vieux-port-large.jpg 3x,
+                          
+                           <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/vieux-port-large.jpg 3x,
                                    images/activites/vieux-port-medium.jpg 2x,
                                    images/activites/vieux-port-small.jpg  1x">
 
-                        <img class="object-fit-norm" src="images/activites/vieux-port-large.jpg" alt="vieux-port">
-                     </picture>
+                           <img  src="images/activites/vieux-port-large.jpg" alt="vieux-port">
+                        </picture> -->
                   </div>
-                  <div class="card3-nom">
-                     <h4>Vieux port</h4>
-                  </div>
-               </div>
+                  <h4 class="card3-nom">Vieux port</h4>
+               </a>
                <!--  FORT DE POMEGUES -->
-               <div class="card-activites">
-                  <div class="card3-image">
-                     <!-- <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" /> -->
+               <a class="card-activites" href="#">
+                  <div class="card3-image petit">
                      <picture>
                         <!-- ordi-->
                         <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/pomegues-xlarge.jpg 3x,
@@ -558,15 +558,11 @@
                         <img class="object-fit-norm" src="images/activites/pomegues-large.jpg" alt="fort-de-pomegues">
                      </picture>
                   </div>
-                  <div class="card3-nom">
-                     <h4>Fort de Pomègues</h4>
-                  </div>
-               </div>
+                  <h4 class="card3-nom">Fort de Pomègues</h4>
+               </a>
                <!--  FRIOUL -->
-               <div class="card-activites">
-                  <div class="card3-image">
-                     <!--  <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" /> -->
+               <a class="card-activites" href="#">
+                  <div class="card3-image petit">
                      <picture>
                         <!-- ordi-->
                         <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/frioul-xlarge.jpg 3x,
@@ -583,15 +579,13 @@
                         <img class="object-fit-norm" src="images/activites/frioul-large.jpg" alt="iles-du-frioul">
                      </picture>
                   </div>
-                  <div class="card3-nom">
-                     <h4>Iles du Frioul</h4>
-                  </div>
-               </div>
+                  <h4 class="card3-nom">Iles du Frioul</h4>
+               </a>
+            </section>
+            <section id="bloc-droite">
                <!--  CALANQUES -->
-               <div class="card-activites">
-                  <div class="card3-image">
-                     <!-- img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" /> -->
+               <a class="card-activites" href="#">
+                  <div class="card3-image grand">
                      <picture>
                         <!-- ordi-->
                         <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/calanques-xlarge.jpg 3x,
@@ -609,15 +603,11 @@
                            alt="parc-national-calanques">
                      </picture>
                   </div>
-                  <div class="card3-nom">
-                     <h4>Parc National des Calanques</h4>
-                  </div>
-               </div>
+                  <h4 class="card3-nom">Parc National des Calanques</h4>
+               </a>
                <!--  NOTRE DAME DE LAGARDE -->
-               <div class="card-activites">
-                  <div class="card3-image">
-                     <!-- <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" /> -->
+               <a class="card-activites petit" href="#">
+                  <div class="card3-image petit">
                      <picture>
                         <!-- ordi-->
                         <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/lagarde-xlarge.jpg 3x,
@@ -635,15 +625,11 @@
                            alt="Notre-Dame-de-la-Garde">
                      </picture>
                   </div>
-                  <div class="card3-nom">
-                     <h4>Notre-Dame-de-la-Garde</h4>
-                  </div>
-               </div>
+                  <h4 class="card3-nom">Notre-Dame-de-la-Garde</h4>
+               </a>
                <!--  LONGCHAMP-->
-               <div class="card-activites">
-                  <div class="card3-image">
-                     <!-- <img class="object-fit-norm" src="images/activites/3_medium/vieux-port-m.jpg"
-                        alt="hotel_tout_bleu_et_blanc" /> -->
+               <a class="card-activites" href="#">
+                  <div class="card3-image petit">
                      <picture>
                         <!-- ordi-->
                         <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/longchamp-xlarge.jpg 3x,
@@ -660,10 +646,9 @@
                         <img class="object-fit-norm" src="images/activites/longchamp-small.jpg" alt="parc-longchamp">
                      </picture>
                   </div>
-                  <div class="card3-nom">
-                     <h4>Parc Longchamp</h4>
-                  </div>
-               </div>
+                  <h4 class="card3-nom">Parc Longchamp</h4>
+               </a>
+            </section>
             </section>
          </section>
       </main>
