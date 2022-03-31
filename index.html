@@ -52,34 +52,32 @@
             </div>
             <div id="filtres">
                <div id="filtres_boutons">
-                  <span class="mobile">
-                     <h2>Filtres</h2>
-                  </span>
-                  <div class="boutons">
+                  <h2 class="mobile">Filtres</h2>
+                  <button class="boutons">
                      <div class="moncercle">
                         <i class="fa-solid fa-money-bill-1-wave fa-xl"></i>
                      </div>
-                     <input type="submit" value="Économique" />
-                  </div>
-                  <div class="boutons">
+                     Économique
+                  </button>
+                  <button class="boutons">
                      <div class="moncercle">
                         <i class="fa-solid fa-child fa-xl"></i>
                      </div>
-                     <input type="submit" value="Familial" />
-                  </div>
-                  <div class="boutons">
+                     Familial
+                  </button>
+                  <button class="boutons">
                      <div class="moncercle">
                         <i class="fa-solid fa-heart fa-xl"></i>
                      </div>
-                     <input type="submit" value="Romantique" />
-                  </div>
-                  <div class="boutons">
+                    Romantique
+                  </button>
+                  <button class="boutons">
                      <div class="moncercle">
                         <i class="fa-solid fa-dog fa-xl"></i>
                      </div>
-                     <input type="submit" value="Animaux autorisés" />
+                     Animaux autorisés
                   </div>
-               </div>
+               </button>
                <div class="info">
                   <div class="moncerclegris"><i class="fa-solid fa-info fa-2xs"></i></div>
                   <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -96,28 +94,15 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <!-- <img class="object-fit-norm"
-                              src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                              alt="auberge_cannebiere" /> -->
-                           <!-- <picture>
-                                 <source type="image/png" media="(min-width:1200px)" srcset="images/hebergements/2_large/cannebiere-large.jpg">
-                                 <source type="image/png" media="(min-width:768px)" srcset="images/hebergements/4_small/cannebiere-small.jpg">
-                                 <img class="object-fit-norm" src="images/hebergements/4_small/cannebiere-small.jpg" alt="auberge_cannebiere">
-                              </picture> -->
                            <picture>
                               <!-- ordi-->
-                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/cannebiere-xlarge.jpg 3x,
-                                         images/hebergements/cannebiere-large.jpg 2x,
-                                         images/hebergements/cannebiere-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/cannebiere-xlarge.jpg,">
                               <!-- tablettes-->
-                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/cannebiere-xlarge.jpg 3x,
-                                         images/hebergements/cannebiere-large.jpg 2x,
-                                         images/hebergements/cannebiere-medium.jpg 1x">
-                              <!-- mobile-->
-                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/cannebiere-large.jpg 3x,
-                                         images/hebergements/cannebiere-medium.jpg 2x,
-                                         images/hebergements/cannebiere-small.jpg  1x">
-
+                              <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/hebergements/cannebiere-large.jpg,">
+                              <!-- mobile-large-->
+                              <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/hebergements/cannebiere-medium.jpg,">
+                              <!-- mobile-petit-->
+                              <source type="image/jpg" media="(max-width:320px)" srcset="images/hebergements/cannebiere-small.jpg,">
                               <img class="object-fit-norm" src="images/hebergements/cannebiere-large.jpg"
                                  alt="auberge_cannebiere">
                            </picture>
@@ -145,23 +130,14 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <!-- <img class="object-fit-norm"
-                              src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                              alt="hotel_du_port" /> -->
                            <picture>
                               <!-- ordi-->
-                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/port-xlarge.jpg 3x,
-                                            images/hebergements/port-large.jpg 2x,
-                                            images/hebergements/port-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/port-xlarge.jpg">
                               <!-- tablettes-->
-                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/port-xlarge.jpg 3x,
-                                            images/hebergements/port-large.jpg 2x,
-                                            images/hebergements/port-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/hebergements/port-large.jpg">
                               <!-- mobile-->
-                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/port-large.jpg 3x,
-                                            images/hebergements/port-medium.jpg 2x,
-                                            images/hebergements/port-small.jpg  1x">
-
+                              <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/hebergements/port-medium.jpg">
+                              <source type="image/jpg" media="(max-width:320px)" srcset="images/hebergements/port-small.jpg">
                               <img class="object-fit-norm" src="images/hebergements/port-large.jpg" alt="hotel_du_port">
                            </picture>
                         </div>
@@ -170,8 +146,8 @@
                         <div class="card-body">
                            <!-- Nom de l'hotel-->
                            <div class="card-nom">
-                              <h4> Hôtel du port</h4>
-                              <p>Nuit à partir de <strong>52€</strong></p>
+                            <b>Hôtel du port</b>
+                            Nuit à partir de <strong>52€</strong>
                            </div>
                            <!-- Note -->
                            <div class="card-note">
@@ -189,23 +165,14 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <!-- <img class="object-fit-norm"
-                              src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                              alt="hotel_les_mouettes" /> -->
                            <picture>
                               <!-- ordi-->
-                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/mouettes-xlarge.jpg 3x,
-                                            images/hebergements/mouettes-large.jpg 2x,
-                                            images/hebergements/mouettes-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/mouettes-xlarge.jpg">
                               <!-- tablettes-->
-                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/mouettes-xlarge.jpg 3x,
-                                            images/hebergements/mouettes-large.jpg 2x,
-                                            images/hebergements/mouettes-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/hebergements/mouettes-large.jpg">
                               <!-- mobile-->
-                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/mouettes-large.jpg 3x,
-                                            images/hebergements/mouettes-medium.jpg 2x,
-                                            images/hebergements/mouettes-small.jpg  1x">
-
+                              <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/hebergements/mouettes-medium.jpg">
+                              <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/hebergements/mouettes-small.jpg">
                               <img class="object-fit-norm" src="images/hebergements/mouettes-large.jpg"
                                  alt="hotel_les_mouettes">
                            </picture>
@@ -233,23 +200,14 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <!-- <img class="object-fit-norm"
-                              src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                              alt="hotel_de_la_mer" /> -->
                            <picture>
                               <!-- ordi-->
-                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/mer-xlarge.jpg 3x,
-                                            images/hebergements/mer-large.jpg 2x,
-                                            images/hebergements/mer-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/mer-xlarge.jpg">
                               <!-- tablettes-->
-                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/mer-xlarge.jpg 3x,
-                                            images/hebergements/mer-large.jpg 2x,
-                                            images/hebergements/mer-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/hebergements/mer-large.jpg">
                               <!-- mobile-->
-                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/mer-large.jpg 3x,
-                                            images/hebergements/mer-medium.jpg 2x,
-                                            images/hebergements/mer-small.jpg  1x">
-
+                              <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/hebergements/mer-medium.jpg">
+                              <source type="image/jpg" media="(max-width:320px)" srcset="images/hebergements/mer-small.jpg">
                               <img class="object-fit-norm" src="images/hebergements/mer-large.jpg"
                                  alt="hotel_de_la_mer">
                            </picture>
@@ -277,23 +235,14 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card-image">
-                           <!-- <img class="object-fit-norm"
-                              src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                              alt="auberge_le_panier" /> -->
                            <picture>
                               <!-- ordi-->
-                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/panier-xlarge.jpg 3x,
-                                            images/hebergements/panier-large.jpg 2x,
-                                            images/hebergements/panier-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/panier-xlarge.jpg">
                               <!-- tablettes-->
-                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/panier-xlarge.jpg 3x,
-                                            images/hebergements/panier-large.jpg 2x,
-                                            images/hebergements/panier-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/hebergements/panier-large.jpg">
                               <!-- mobile-->
-                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/panier-large.jpg 3x,
-                                            images/hebergements/panier-medium.jpg 2x,
-                                            images/hebergements/panier-small.jpg  1x">
-
+                              <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/hebergements/panier-medium.jpg">
+                              <source type="image/jpg" media="(max-width:320px)" srcset="images/hebergements/panier-small.jpg">
                               <img class="object-fit-norm" src="images/hebergements/panier-large.jpg"
                                  alt="auberge_le_panier">
                            </picture>
@@ -326,17 +275,12 @@
                               alt="hotel_chez_amina" /> -->
                            <picture>
                               <!-- ordi-->
-                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/amina-xlarge.jpg 3x,
-                                            images/hebergements/amina-large.jpg 2x,
-                                            images/hebergements/amina-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/amina-xlarge.jpg">
                               <!-- tablettes-->
-                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/amina-xlarge.jpg 3x,
-                                            images/hebergements/amina-large.jpg 2x,
-                                            images/hebergements/amina-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/hebergements/amina-large.jpg">
                               <!-- mobile-->
-                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/amina-large.jpg 3x,
-                                            images/hebergements/amina-medium.jpg 2x,
-                                            images/hebergements/amina-small.jpg  1x">
+                              <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/hebergements/amina-medium.jpg">
+                              <source type="image/jpg" media="(max-width:320px)" srcset="images/hebergements/amina-small.jpg">
 
                               <img class="object-fit-norm" src="images/hebergements/amina-large.jpg"
                                  alt="hotel_chez_amina">
@@ -375,22 +319,14 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card2-image">
-                           <!--  <img class="object-fit-norm"
-                              src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                              alt="au_coeur_de_l_eau" /> -->
                            <picture>
                               <!-- ordi-->
-                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/soleil-xlarge.jpg 3x,
-                                            images/hebergements/soleil-large.jpg 2x,
-                                            images/hebergements/soleil-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/soleil-xlarge.jpg">
                               <!-- tablettes-->
-                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/soleil-xlarge.jpg 3x,
-                                            images/hebergements/soleil-large.jpg 2x,
-                                            images/hebergements/soleil-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/hebergements/soleil-large.jpg">
                               <!-- mobile-->
-                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/soleil-large.jpg 3x,
-                                            images/hebergements/soleil-medium.jpg 2x,
-                                            images/hebergements/soleil-small.jpg  1x">
+                              <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/hebergements/soleil-medium.jpg">
+                              <source type="image/jpg" media="(max-width:320px)" srcset="images/hebergements/soleil-small.jpg">
 
                               <img class="object-fit-norm" src="images/hebergements/soleil-large.jpg"
                                  alt="hotel_soleil_le_matin">
@@ -419,23 +355,14 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card2-image">
-                           <!--  <img class="object-fit-norm"
-                              src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                              alt="au_coeur_de_l_eau" /> -->
                            <picture>
                               <!-- ordi-->
-                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/coeur-xlarge.jpg 3x,
-                                            images/hebergements/coeur-large.jpg 2x,
-                                            images/hebergements/coeur-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/coeur-xlarge.jpg">
                               <!-- tablettes-->
-                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/coeur-xlarge.jpg 3x,
-                                            images/hebergements/coeur-large.jpg 2x,
-                                            images/hebergements/coeur-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/coeur-large.jpg">
                               <!-- mobile-->
-                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/coeur-large.jpg 3x,
-                                            images/hebergements/coeur-medium.jpg 2x,
-                                            images/hebergements/coeur-small.jpg  1x">
-
+                              <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/hebergements/coeur-medium.jpg">
+                              <source type="image/jpg" media="(max-width:320px)" srcset="images/hebergements/coeur-small.jpg">
                               <img class="object-fit-norm" src="images/hebergements/coeur-large.jpg"
                                  alt="au_coeur_de_l_eau">
                            </picture>
@@ -463,22 +390,14 @@
                      <a href="#">
                         <!-- Image hotel -->
                         <div class="card2-image">
-                           <!-- <img class="object-fit-norm"
-                              src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                              alt="hotel_tout_bleu_et_blanc" /> -->
                            <picture>
                               <!-- ordi-->
-                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/bleu-blanc-xlarge.jpg 3x,
-                                               images/hebergements/bleu-blanc-large.jpg 2x,
-                                               images/hebergements/bleu-blanc-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:992px)" srcset="images/hebergements/bleu-blanc-xlarge.jpg">
                               <!-- tablettes-->
-                              <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/hebergements/bleu-blanc-xlarge.jpg 3x,
-                                               images/hebergements/bleu-blanc-large.jpg 2x,
-                                               images/hebergements/bleu-blanc-medium.jpg 1x">
+                              <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/hebergements/bleu-blanc-large.jpg">
                               <!-- mobile-->
-                              <source type="image/jpg" media="(max-width:768px)" srcset="images/hebergements/bleu-blanc-large.jpg 3x,
-                                               images/hebergements/bleu-blanc-medium.jpg 2x,
-                                               images/hebergements/bleu-blanc-small.jpg  1x">
+                              <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/hebergements/bleu-blanc-medium.jpg">
+                              <source type="image/jpg" media="(max-width:320px)" srcset="images/hebergements/bleu-blanc-small.jpg,">
 
                               <img class="object-fit-norm" src="images/hebergements/bleu-blanc-large.jpg"
                                  alt="hotel_tout_bleu_et_blanc">
@@ -514,27 +433,16 @@
                <!--  VIEUX PORT -->
                <a class="card-activites" href="#">
                   <div class="card3-image grand">
-                     <img src="images/activites/vieux-port-large.jpg" alt="vieux-port" srcset="images/activites/vieux-port-xlarge.jpg 4846x,
-                                 images/activites/vieux-port-large.jpg 2423w,
-                                 images/activites/vieux-port-medium.jpg 1212w,
-                                 images/activites/vieux-port-small.jpg 589w" sizes="100vw">
-
-                     <!-- <picture>
-                          
-                           <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/vieux-port-xlarge.jpg 3x,
-                                 images/activites/vieux-port-large.jpg 2x,
-                                 images/activites/vieux-port-medium.jpg 1x">
+                     <picture>
+                           <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/vieux-port-xlarge.jpg">
                            
-                           <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/vieux-port-xlarge.jpg 3x,
-                                   images/activites/vieux-port-large.jpg 2x,
-                                   images/activites/vieux-port-medium.jpg 1x">
+                           <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/activites/vieux-port-large.jpg">
                           
-                           <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/vieux-port-large.jpg 3x,
-                                   images/activites/vieux-port-medium.jpg 2x,
-                                   images/activites/vieux-port-small.jpg  1x">
+                           <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/activites/vieux-port-medium.jpg">
+                           <source type="image/jpg" media="(max-width:320px)" srcset="images/hebergements/vieux-port-small.jpg,">
 
                            <img  src="images/activites/vieux-port-large.jpg" alt="vieux-port">
-                        </picture> -->
+                        </picture>
                   </div>
                   <h4 class="card3-nom">Vieux port</h4>
                </a>
@@ -543,17 +451,12 @@
                   <div class="card3-image moyen">
                      <picture>
                         <!-- ordi-->
-                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/pomegues-xlarge.jpg 3x,
-                                 images/activites/pomegues-large.jpg 2x,
-                                 images/activites/pomegues-medium.jpg 1x">
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/pomegues-xlarge.jpg">
                         <!-- tablettes-->
-                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/pomegues-xlarge.jpg 3x,
-                                   images/activites/pomegues-large.jpg 2x,
-                                   images/activites/pomegues-medium.jpg 1x">
+                        <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/activites/pomegues-large.jpg">
                         <!-- mobile-->
-                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/pomegues-large.jpg 3x,
-                                   images/activites/pomegues-medium.jpg 2x,
-                                   images/activites/pomegues-small.jpg  1x">
+                        <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/activites/pomegues-medium.jpg">
+                        <source type="image/jpg" media="(max-width:320px)" srcset="images/activites/pomegues-small.jpg">
 
                         <img class="object-fit-norm" src="images/activites/pomegues-large.jpg" alt="fort-de-pomegues">
                      </picture>
@@ -565,17 +468,12 @@
                   <div class="card3-image petit">
                      <picture>
                         <!-- ordi-->
-                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/frioul-xlarge.jpg 3x,
-                                 images/activites/frioul-large.jpg 2x,
-                                 images/activites/frioul-medium.jpg 1x">
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/frioul-xlarge.jpg">
                         <!-- tablettes-->
-                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/frioul-xlarge.jpg 3x,
-                                   images/activites/frioul-large.jpg 2x,
-                                   images/activites/frioul-medium.jpg 1x">
+                        <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/activites/frioul-large.jpg ">
                         <!-- mobile-->
-                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/frioul-large.jpg 3x,
-                                   images/activites/frioul-medium.jpg 2x,
-                                   images/activites/frioul-small.jpg  1x">
+                        <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/activites/frioul-medium.jpg">
+                        <source type="image/jpg" media="(max-width:320px)" srcset="images/hebergements/frioul-small.jpg,">
                         <img class="object-fit-norm" src="images/activites/frioul-large.jpg" alt="iles-du-frioul">
                      </picture>
                   </div>
@@ -588,17 +486,12 @@
                   <div class="card3-image grand">
                      <picture>
                         <!-- ordi-->
-                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/calanques-xlarge.jpg 3x,
-                                 images/activites/calanques-large.jpg 2x,
-                                 images/activites/calanques-medium.jpg 1x">
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/calanques-xlarge.jpg">
                         <!-- tablettes-->
-                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/calanques-xlarge.jpg 3x,
-                                   images/activites/calanques-large.jpg 2x,
-                                   images/activites/calanques-medium.jpg 1x">
+                        <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/activites/calanques-large.jpg">
                         <!-- mobile-->
-                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/calanques-large.jpg 3x,
-                                   images/activites/calanques-medium.jpg 2x,
-                                   images/activites/calanques-small.jpg  1x">
+                        <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/activites/calanques-medium.jpg">
+                        <source type="image/jpg" media="(max-width:320px)" srcset="images/activites/calanques-small.jpg">
                         <img class="object-fit-norm" src="images/activites/calanques-large.jpg"
                            alt="parc-national-calanques">
                      </picture>
@@ -610,17 +503,12 @@
                   <div class="card3-image moyen">
                      <picture>
                         <!-- ordi-->
-                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/lagarde-xlarge.jpg 3x,
-                                           images/activites/lagarde-large.jpg 2x,
-                                           images/activites/lagarde-medium.jpg 1x">
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/lagarde-xlarge.jpg ">
                         <!-- tablettes-->
-                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/lagarde-xlarge.jpg 3x,
-                                   images/activites/lagarde-large.jpg 2x,
-                                   images/activites/lagarde-medium.jpg 1x">
+                        <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/activites/lagarde-large.jpg">
                         <!-- mobile-->
-                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/lagarde-large.jpg 3x,
-                                      images/activites/lagarde-medium.jpg 2x,
-                                      images/activites/lagarde-small.jpg  1x">
+                        <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/activites/lagarde-medium.jpg">
+                        <source type="image/jpg" media="(max-width:320px)" srcset="images/activites/lagarde-small.jpg">
                         <img class="object-fit-norm" src="images/activites/lagarde-large.jpg"
                            alt="Notre-Dame-de-la-Garde">
                      </picture>
@@ -632,17 +520,12 @@
                   <div class="card3-image petit">
                      <picture>
                         <!-- ordi-->
-                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/longchamp-xlarge.jpg 3x,
-                                           images/activites/longchamp-large.jpg 2x,
-                                           images/activites/longchamp-medium.jpg 1x">
+                        <source type="image/jpg" media="(min-width:992px)" srcset="images/activites/longchamp-xlarge.jpg">
                         <!-- tablettes-->
-                        <source type="image/jpg" media="(min-width:768px) or (max-width:992px)" srcset="images/activites/longchamp-xlarge.jpg 3x,
-                                   images/activites/longchamp-large.jpg 2x,
-                                   images/activites/longchamp-medium.jpg 1x">
+                        <source type="image/jpg" media="(min-width:768px) and (max-width:992px)" srcset="images/activites/longchamp-large.jpg">
                         <!-- mobile-->
-                        <source type="image/jpg" media="(max-width:768px)" srcset="images/activites/longchamp-large.jpg 3x,
-                                      images/activites/longchamp-medium.jpg 2x,
-                                      images/activites/longchamp-small.jpg  1x">
+                        <source type="image/jpg" media="(min-width:320px) and (max-width:768px)" srcset="images/activites/longchamp-medium.jpg">
+                        <source type="image/jpg" media="(max-width:320px)" srcset="images/activites/longchamp-small.jpg">
                         <img class="object-fit-norm" src="images/activites/longchamp-small.jpg" alt="parc-longchamp">
                      </picture>
                   </div>
