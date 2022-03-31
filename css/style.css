@@ -265,7 +265,7 @@ button:hover, button:focus {
     /* flex: 2; */
     background: #f2f2f2;
     /* margin-right: 2.25%; */ 
-    padding: 2.5%;
+    padding: 2.5% 2.5% 0 2.5%;
     border-radius: 20px;
 }
 
@@ -273,11 +273,10 @@ button:hover, button:focus {
 
 #cartes_hebergements {
     display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center; 
+    flex-flow: row  wrap;
+    justify-content: space-between; 
     gap: 2vw; 
-    margin-bottom: 5%;
+    margin-bottom: 6%;
 }
 
 .card {
@@ -307,7 +306,7 @@ button:hover, button:focus {
 
 .card img {
     height: auto;
-    filter: grayscale(1);
+    filter: grayscale(0);
     max-width: 120%;
     position: absolute;
     top: 50%;
@@ -320,18 +319,25 @@ button:hover, button:focus {
 }
 
 .card-body {
-    
     display: flex;
+    padding: 5%;
     flex-flow: column nowrap;
-    justify-content: space-around;
-    padding: 0 4% 5% 4%;
+    justify-content: space-between;
+   /*  display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    padding: 2% 4% 5% 4%; 
     width: 100%;
     box-sizing: border-box;
-    height: 40%;
+    height: 30%; */
+}
+.card-body h4, p {
+    padding: 5% 0 0 0 ;
+    margin: 0%;
 }
 
 .card:hover .card-image img {
-    filter: grayscale(0);
+    filter: grayscale(1);
 }
 
 .card-note {
@@ -391,7 +397,7 @@ button:hover, button:focus {
 
 .card2-image img {
     max-height: 160%;
-    filter: grayscale(1);
+    filter: grayscale(0);
     width: auto;
     position: absolute;
     top: 50%;
@@ -408,7 +414,7 @@ button:hover, button:focus {
 
 
 .card2:hover .card2-image img {
-    filter: grayscale(0);
+    filter: grayscale(1);
 }
 
 /*BLOC3-ACTIVITES*/
@@ -425,30 +431,29 @@ button:hover, button:focus {
     width: 100%;
     height: 47vh;
     padding: 0;
-    gap: 2vh;
+    
 }
 #bloc-gauche{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items:center;
-    width: 47%;
-    height: 47vh;
+    align-items:flex-start;
+    width: 48.5%;
+    height: 100%;
     padding: 0;
-    gap: 2vh;  
+   /*  margin-right: 3%; */  
 }
 #bloc-droite{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items:center;
-    width: 47%;
-    height: 47vh;
+    align-items:flex-end;
+    width: 48.5%;
+    height: 100%;
     padding: 0;
-    gap: 2vh;  
+      
 }
 .card-activites { 
-    /* width: 100%;  */
     background-color: white;
     box-shadow: 2px 2px 20px rgb(226, 223, 223);
     border-radius: 20px;
@@ -461,10 +466,11 @@ button:hover, button:focus {
 
 .card-activites:nth-child(1), .card-activites:nth-child(4) {
     flex: 100%;
-}
+    margin-right: 6%;}
 
 .card-activites:nth-child(2) {
     flex: 2;
+    margin-bottom: 6%;
 }
 
 .card-activites:nth-child(3) {
@@ -476,12 +482,14 @@ button:hover, button:focus {
 }
 
 .grand{
-    height: 85%; 
+    height: 88%; 
+}
+.moyen{
+    height: 83%; 
 }
 .petit{
-    height: 72%; 
+    height: 70%; 
 }
-
 .card3-image {
     overflow: hidden;
     position: relative;
@@ -490,7 +498,7 @@ button:hover, button:focus {
 }
 
 .card3-image img {
-    filter: grayscale(1);
+    filter: grayscale(0);
     min-height: 100%;
     max-width: 280%;
     position: absolute;
@@ -501,14 +509,13 @@ button:hover, button:focus {
 
 h4.card3-nom {
     box-sizing: border-box;
-    padding: 4%;
+    padding: 5%;
     margin: 0;
-    height: 20vh;
 }
 
 
 .card3-image img:hover {
-    filter: grayscale(0);
+    filter: grayscale(1);
 }
 
 
@@ -516,7 +523,6 @@ h4.card3-nom {
 /* FOOTER */
 footer {
     background-color: #F2F2F2;
-
 }
 
 #bas_page {
@@ -526,7 +532,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0% auto 0 auto;
-    width: 90%;
+    width: 93%;
 }
 
 footer nav {
@@ -606,7 +612,7 @@ footer nav li {
 
     .card2-image img {
         height: auto;
-        filter: grayscale(1);
+        filter: grayscale(0);
         width: 120%;
         position: absolute;
         top: 50%;
@@ -677,7 +683,7 @@ footer nav li {
     }
     .card3-image img {
         height: auto;
-        filter: grayscale(1);
+        filter: grayscale(0);
         width: 120%;
         position: absolute;
         top: 50%;
