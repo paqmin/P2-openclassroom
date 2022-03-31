@@ -580,7 +580,7 @@ footer nav li {
 
 /*REPONSIVE DESIGN TABLET*/
 
-@media all and (min-device-width:769px) and (max-device-width:992px) {
+@media all and (min-width:769px) and (max-width:992px) {
     #bloc2 {
         display: flex;
         flex-direction: column-reverse;
@@ -589,6 +589,7 @@ footer nav li {
     #populaires {
         margin-bottom: 2%;
         width: auto;
+        
     }
 
     #cartes-populaires {
@@ -603,30 +604,36 @@ footer nav li {
         background-color: white;
         box-shadow: 2px 2px 20px rgb(226, 223, 223);
         border-radius: 20px;
-        height: 35%;
+        /* height: 35%; */
+        
     }
 
     .card2 a {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         color: #333;
         text-decoration: none;
+        min-height: 210px;
+       
     }
 
     .card2-image {
         overflow: hidden;
-        height: 15vh;
+        /* height: 15vh; */
+        height: 70%;
         position: relative;
         border-radius: 20px 20px 0px 0px;
-        border: 3px solid #FFF;
+        border: 5px solid #FFF;
         box-sizing: border-box;
-        flex-basis: auto;
+        
     }
 
     .card2-image img {
         height: auto;
         filter: grayscale(0);
-        width: 120%;
+        min-height: 100%;
+        max-width: 120%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -634,6 +641,7 @@ footer nav li {
     }
 
     .card2-body {
+
         padding: 10px;
         width: 100%;
     }
@@ -649,17 +657,8 @@ footer nav li {
         justify-content: space-between;
         flex-basis: 33%;
     }
-    #hebergement {
-        background: #fff;
-        margin: 0%;
-        padding: 2%;
-    }
-    #cartes_hebergements {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-basis: 33%;
-    }
+   
+   /*BLOC 3*/
     #bloc3{
         padding: 2%;
     }
