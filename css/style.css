@@ -289,8 +289,8 @@ input[type="search"]::placeholder {
     background-color: white;
     box-shadow: 2px 2px 20px rgb(226, 223, 223);
     border-radius: 20px;
-    height: 215px;
-   /*  height: 29vh; */
+    min-height: 210px; 
+   /* height: 40vh;  */
   /* margin-right: 2%; */ 
    margin-bottom: 4%;
 }
@@ -298,11 +298,15 @@ input[type="search"]::placeholder {
 .card a {
     color: #333;
     text-decoration: none;
+    font-size: 85%;
 }
-
+.card p{
+    font-size: 95%;
+    margin: 6% 0;
+}
 .card-image {
     overflow: hidden;
-    height: 59%;
+    height: 55%;
     position: relative;
     border-radius: 20px 20px 0px 0px;
     border: 5px solid #FFF;
@@ -327,22 +331,15 @@ input[type="search"]::placeholder {
 
 .card-body {
     display: flex;
-    padding: 0% 4% 2%;
+    padding: 2% 4% 2%;
     flex-flow: column nowrap;
-    justify-content: space-between;
-   /*  display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    padding: 2% 4% 5% 4%; 
-    width: 100%;*/
+    justify-content: space-evenly;
     box-sizing: border-box;
-    height: 10vh; 
+    width: 100%;
+    
    
 }
-.card-body h4, .card-body p {
-    padding: 2% 0 0 0 ;
-    margin: 0%;
-}
+
 
 .card:hover .card-image img {
     filter: grayscale(1);
@@ -421,7 +418,13 @@ input[type="search"]::placeholder {
     flex-flow: column nowrap;
     justify-content: space-between;
 }
-
+.card2-body h4 {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.card2-body p {
+    margin-top: 1%;
+}
 
 .card2:hover .card2-image img {
     filter: grayscale(1);
