@@ -2,7 +2,7 @@
 
 h1, h2, h3, h4, p, ul, li, input {
     color: rgb(0, 0, 0);
-    /* font-size: clamp(var(--min), var(--val), var(--max)); */ 
+    /* font-size: clamp(var(--min), var(--val), var(--max)); */
 }
 
 /* h1 {
@@ -101,7 +101,7 @@ header nav li {
 
 header nav ul a {
     color: #181818;
-    padding: 6vh 1.75vw 0 ;
+    padding: 6vh 1.75vw 0;
     text-decoration: none;
 }
 
@@ -121,29 +121,30 @@ header nav ul a:hover {
     margin: 2% 0;
 }
 
-#texte_formulaire p,#texte_formulaire h1{
+#texte_formulaire p, #texte_formulaire h1 {
     margin: 11px 0px;
 }
+
 .mobile {
     margin-right: 2.25%;
 }
 
 #position {
-    position: relative; 
-  padding: 16px 20px 16px 20px; 
+    position: relative;
+    padding: 16px 20px 16px 20px;
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
     border-bottom: none;
-   justify-self: center; 
- 
+    justify-self: center;
+
 }
 
 input[type="search"] {
     position: relative;
     padding: 15px 0px 15px 15px;
-    border-top: 1px solid #F2F2F2 ;
+    border-top: 1px solid #F2F2F2;
     border-right: 1px transparent solid;
-    border-bottom: 1px solid #F2F2F2 ;
+    border-bottom: 1px solid #F2F2F2;
     border-left: 1px transparent solid;
     justify-self: center;
     /*width : 80%; 
@@ -172,7 +173,7 @@ input[type="search"]::placeholder {
 
 #formulaire button:hover, #formulaire button:focus {
     outline: none;
-    background: #000;
+    background-color: #4c4c4c;
     color: #FFF;
 }
 
@@ -204,7 +205,12 @@ input[type="search"]::placeholder {
     background-color: #fff;
     font-weight: 600;
 }
+.boutons:hover {
+    border: 2px solid #deebff;
+    background-color: #4c4c4c;
+    color: #FFF;
 
+}
 .moncercle {
     display: flex;
     position: relative;
@@ -270,7 +276,7 @@ input[type="search"]::placeholder {
     width: 59%;
     /* flex: 2; */
     background: #f2f2f2;
-    /* margin-right: 2.25%; */ 
+    /* margin-right: 2.25%; */
     padding: 2.5% 2.5% 1.5%;
     border-radius: 20px;
 }
@@ -279,20 +285,20 @@ input[type="search"]::placeholder {
 
 #cartes_hebergements {
     display: flex;
-    flex-flow: row  wrap;
-    justify-content: space-between; 
+    flex-flow: row wrap;
+    justify-content: space-between;
     /* margin-bottom: 6%; */
 }
 
 .card {
-    flex: 0 0 30%; 
+    flex: 0 0 30%;
     background-color: white;
     box-shadow: 2px 2px 20px rgb(226, 223, 223);
     border-radius: 20px;
-    min-height: 210px; 
-   /* height: 40vh;  */
-  /* margin-right: 2%; */ 
-   margin-bottom: 4%;
+    min-height: 210px;
+    /* height: 40vh;  */
+    /* margin-right: 2%; */
+    margin-bottom: 4%;
 }
 
 .card a {
@@ -300,10 +306,12 @@ input[type="search"]::placeholder {
     text-decoration: none;
     font-size: 85%;
 }
-.card p{
+
+.card p {
     font-size: 95%;
     margin: 6% 0;
 }
+
 .card-image {
     overflow: hidden;
     height: 55%;
@@ -311,7 +319,7 @@ input[type="search"]::placeholder {
     border-radius: 20px 20px 0px 0px;
     border: 5px solid #FFF;
     box-sizing: border-box;
-    
+
 }
 
 .card img {
@@ -336,8 +344,8 @@ input[type="search"]::placeholder {
     justify-content: space-evenly;
     box-sizing: border-box;
     width: 100%;
-    
-   
+
+
 }
 
 
@@ -418,10 +426,12 @@ input[type="search"]::placeholder {
     flex-flow: column nowrap;
     justify-content: space-between;
 }
+
 .card2-body h4 {
     margin-top: 2%;
     margin-bottom: 5%;
 }
+
 .card2-body p {
     margin-top: 1%;
 }
@@ -444,45 +454,54 @@ input[type="search"]::placeholder {
     width: 100%;
     height: 60vh;
     padding: 0;
-    
+
 }
-#bloc-gauche{
+
+#bloc-gauche {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items:flex-start;
+    align-items: flex-start;
     width: 48.5%;
     height: 100%;
     padding: 0;
-   /*  margin-right: 3%; */  
+    /*  margin-right: 3%; */
 }
-#bloc-droite{
+
+#bloc-droite {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items:flex-end;
+    align-items: flex-end;
     width: 48.5%;
     height: 100%;
     padding: 0;
-      
+
 }
-.card-activites { 
+
+.card-activites {
     background-color: white;
     box-shadow: 2px 2px 20px rgb(226, 223, 223);
     border-radius: 20px;
     position: relative;
     box-sizing: border-box;
     color: #333;
-    text-decoration: none;  
+    text-decoration: none;
     width: 47%;
 }
 
-.card-activites:nth-child(1), .card-activites:nth-child(4) {
+.card-activites:nth-child(1) {
     flex: 100%;
-    margin-right: 6%;}
+    margin-right: 6%;
+}
 
-.card-activites:nth-child(2) {
+#bloc-gauche .card-activites:nth-child(2) {
     flex: 2;
+    margin-bottom: 5%;
+}
+
+#bloc-droite .card-activites:nth-child(2) {
+    flex: 1;
     margin-bottom: 5%;
 }
 
@@ -490,24 +509,26 @@ input[type="search"]::placeholder {
     flex: 1;
 }
 
-.card-activites:nth-child(5), .card-activites:nth-child(6) {
-    flex: 1;
+.grand {
+    height: 88%;
 }
 
-.grand{
-    height: 88%; 
+.moyen {
+    height: 83%;
 }
-.moyen{
-    height: 83%; 
+.milieu {
+    height: 78%;
 }
-.petit{
-    height: 70%; 
+
+.petit {
+    height: 69%;
 }
+
 .card3-image {
     overflow: hidden;
     position: relative;
     border-radius: 20px 20px 0px 0px;
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
 .card3-image img {
@@ -589,44 +610,39 @@ footer nav li {
     #populaires {
         margin-bottom: 2%;
         width: auto;
-        
     }
 
     #cartes-populaires {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        flex-basis: 33%;
     }
 
     .card2 {
-        width: 33%;
+        width: 30%;
         background-color: white;
         box-shadow: 2px 2px 20px rgb(226, 223, 223);
         border-radius: 20px;
-        /* height: 35%; */
-        
     }
 
     .card2 a {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         color: #333;
         text-decoration: none;
         min-height: 210px;
-       
+
     }
 
     .card2-image {
         overflow: hidden;
-        /* height: 15vh; */
-        height: 70%;
+        flex: 0 0 55%;
         position: relative;
         border-radius: 20px 20px 0px 0px;
         border: 5px solid #FFF;
         box-sizing: border-box;
-        
+
     }
 
     .card2-image img {
@@ -641,49 +657,75 @@ footer nav li {
     }
 
     .card2-body {
-
-        padding: 10px;
+        font-size: 85%;
+        display: flex;
+        padding: 2% 4% 2%;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        box-sizing: border-box;
         width: 100%;
+        height: 100%;
     }
+
+    .card2-body h4 {
+        margin: 0;
+        ;
+    }
+
     #hebergement {
         background: #fff;
         margin: 0%;
         padding: 2%;
         width: auto;
     }
+
     #cartes_hebergements {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        flex-basis: 33%;
+
     }
-   
-   /*BLOC 3*/
-    #bloc3{
-        padding: 2%;
+
+    /*BLOC 3*/
+    #bloc3 {
+        padding: 0% 2%;
+        margin-top: 0%;
+        font-size: 85%;
     }
+
     #activites {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        flex-basis: 33%;
-        height: 35%;
-        
+        height: auto;
+        width: auto;
+
     }
+
+    #bloc-gauche, #bloc-droite {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+
     .card-activites {
-        width: 25%;
-        height: 20vh;
+        height: 210px;
         background-color: white;
         box-shadow: 2px 2px 20px rgb(226, 223, 223);
         border-radius: 20px;
-      
     }
+
     .card-activites a {
         display: flex;
         flex-direction: column;
         color: #333;
         text-decoration: none;
+       
     }
+
     .card3-image {
         overflow: hidden;
         height: 80%;
@@ -693,6 +735,7 @@ footer nav li {
         box-sizing: border-box;
         flex-basis: auto;
     }
+
     .card3-image img {
         height: auto;
         filter: grayscale(0);
@@ -702,12 +745,15 @@ footer nav li {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .card-activites:nth-child(n) {
-        flex:auto;
+
+    .card-activites:nth-child(n), #bloc-gauche .card-activites:nth-child(2), #bloc-droite .card-activites:nth-child(2) {
+        flex: 0 0 30%;
+        margin: 0 0 4%;
     }
+
     .card3-nom {
         height: auto;
-    } 
+    }
 }
 
 /*RESPONSIVE DESIGN MOBILE*/
@@ -725,12 +771,13 @@ footer nav li {
     }
 
     /* RESPONSIVE HEADER */
-   
-    #logo{
+
+    #logo {
         padding: 0%;
         margin: 0;
-        
+
     }
+
     header nav {
         display: flex;
         flex-direction: column;
@@ -742,7 +789,7 @@ footer nav li {
     header nav ul {
         display: flex;
         list-style-type: none;
-        
+
         padding-inline-start: 0%;
         width: 100%;
         height: 6vh;
@@ -753,7 +800,7 @@ footer nav li {
         width: 50%;
         text-align: center;
     }
-   
+
     header nav ul a {
         color: #181818;
         padding: 37px 60px 37px 50px;
@@ -761,7 +808,7 @@ footer nav li {
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
         box-sizing: border-box;
-        
+
     }
 
     header nav ul a:hover {
@@ -796,9 +843,13 @@ footer nav li {
         border-radius: 15px;
         padding: 14px 15px 14px 15px;
     }
+
     #position {
-    padding: 14px 15px 14px 15px;
-};
+        padding: 14px 15px 14px 15px;
+    }
+
+    ;
+
     .mobile {
         margin-right: 90%;
     }
