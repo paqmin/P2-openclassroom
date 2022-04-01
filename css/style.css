@@ -71,7 +71,6 @@ body {
 /*HEADER*/
 
 #logo {
-    /* height: 4vh; */
     height: 30px;
     padding-left: 2vh;
     margin-top: 5.5vh;
@@ -147,8 +146,6 @@ input[type="search"] {
     border-bottom: 1px solid #F2F2F2;
     border-left: 1px transparent solid;
     justify-self: center;
-    /*width : 80%; 
-    width: 235px; */
 }
 
 input[type="search"]::placeholder {
@@ -205,12 +202,13 @@ input[type="search"]::placeholder {
     background-color: #fff;
     font-weight: 600;
 }
+
 .boutons:hover {
     border: 2px solid #deebff;
     background-color: #4c4c4c;
     color: #FFF;
-
 }
+
 .moncercle {
     display: flex;
     position: relative;
@@ -274,9 +272,7 @@ input[type="search"]::placeholder {
 
 #hebergement {
     width: 59%;
-    /* flex: 2; */
     background: #f2f2f2;
-    /* margin-right: 2.25%; */
     padding: 2.5% 2.5% 1.5%;
     border-radius: 20px;
 }
@@ -287,7 +283,6 @@ input[type="search"]::placeholder {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    /* margin-bottom: 6%; */
 }
 
 .card {
@@ -295,22 +290,20 @@ input[type="search"]::placeholder {
     background-color: white;
     box-shadow: 2px 2px 20px rgb(226, 223, 223);
     border-radius: 20px;
-    min-height: 210px;
-    /* height: 40vh;  */
-    /* margin-right: 2%; */
+    min-height: 230px;
     margin-bottom: 4%;
 }
 
 .card a {
     color: #333;
     text-decoration: none;
-    font-size: 85%;
+    font-size: 90%;
 }
 
-.card p {
-    font-size: 95%;
-    margin: 6% 0;
-}
+/* .card p {
+    font-size: 95%; 
+    margin: 6% 0; 
+} */
 
 .card-image {
     overflow: hidden;
@@ -319,7 +312,6 @@ input[type="search"]::placeholder {
     border-radius: 20px 20px 0px 0px;
     border: 5px solid #FFF;
     box-sizing: border-box;
-
 }
 
 .card img {
@@ -344,8 +336,6 @@ input[type="search"]::placeholder {
     justify-content: space-evenly;
     box-sizing: border-box;
     width: 100%;
-
-
 }
 
 
@@ -357,9 +347,18 @@ input[type="search"]::placeholder {
     color: #0065FC;
 }
 
+#hebergement h4 a{
+    text-decoration: none;
+    color: #000;
+}
+
+#hebergement h4 a:hover{
+    border-bottom: 2px solid #0065FC;
+    color: #0065FC;
+}
+
 /* ASIDE*/
 #populaires {
-    /* flex: 1; */
     width: 29%;
     display: flex;
     flex-direction: column;
@@ -397,14 +396,13 @@ input[type="search"]::placeholder {
     border-radius: 20px;
     color: #333;
     text-decoration: none;
-    /* height: 20vh; */
     height: 146px;
+    font-size: 90%;
 }
 
 .card2-image {
     flex: 0 0 40%;
     overflow: hidden;
-    /* height: 16vh; */
     position: relative;
     border-radius: 20px 0px 0px 20px;
     border: 5px solid #FFF;
@@ -427,9 +425,9 @@ input[type="search"]::placeholder {
     justify-content: space-between;
 }
 
-.card2-body h4 {
+.card2-body h4, .card-body h4  {
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
 }
 
 .card2-body p {
@@ -454,7 +452,6 @@ input[type="search"]::placeholder {
     width: 100%;
     height: 60vh;
     padding: 0;
-
 }
 
 #bloc-gauche {
@@ -465,7 +462,6 @@ input[type="search"]::placeholder {
     width: 48.5%;
     height: 100%;
     padding: 0;
-    /*  margin-right: 3%; */
 }
 
 #bloc-droite {
@@ -476,7 +472,6 @@ input[type="search"]::placeholder {
     width: 48.5%;
     height: 100%;
     padding: 0;
-
 }
 
 .card-activites {
@@ -516,6 +511,7 @@ input[type="search"]::placeholder {
 .moyen {
     height: 83%;
 }
+
 .milieu {
     height: 78%;
 }
@@ -547,12 +543,9 @@ h4.card3-nom {
     margin: 0;
 }
 
-
 .card3-image img:hover {
     filter: grayscale(1);
 }
-
-
 
 /* FOOTER */
 footer {
@@ -560,7 +553,6 @@ footer {
 }
 
 #bas_page {
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -573,15 +565,11 @@ footer nav {
     width: 30%;
 }
 
-
 footer nav a {
-
     color: #181818;
     padding-bottom: 10px;
     text-decoration: none;
-
 }
-
 
 footer ul {
     padding-left: O;
@@ -596,7 +584,6 @@ footer nav ul a:hover {
 
 footer nav li {
     padding-bottom: 15px;
-
 }
 
 /*REPONSIVE DESIGN TABLET*/
@@ -617,7 +604,9 @@ footer nav li {
         flex-direction: row;
         justify-content: space-between;
     }
-
+#card a{
+    font-size: 100%;
+}
     .card2 {
         width: 30%;
         background-color: white;
@@ -632,7 +621,7 @@ footer nav li {
         color: #333;
         text-decoration: none;
         min-height: 210px;
-
+        font-size: 100%;
     }
 
     .card2-image {
@@ -731,7 +720,7 @@ footer nav li {
         height: 80%;
         position: r6elative;
         border-radius: 20px 20px 0px 0px;
-        border: 3px solid #FFF;
+        border: 5px solid #FFF;
         box-sizing: border-box;
         flex-basis: auto;
     }
@@ -753,6 +742,9 @@ footer nav li {
 
     .card3-nom {
         height: auto;
+    }
+    #bas_page{
+        padding: 0 6%;
     }
 }
 
@@ -783,44 +775,48 @@ footer nav li {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 2vh;
+        margin-top: 40px;
+       
     }
 
     header nav ul {
         display: flex;
         list-style-type: none;
-
         padding-inline-start: 0%;
         width: 100%;
-        height: 6vh;
+   
     }
 
     header nav li {
         margin: 0;
         width: 50%;
         text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #F2F2F2;
     }
 
-    header nav ul a {
-        color: #181818;
-        padding: 37px 60px 37px 50px;
+header nav ul a {
+        
         text-decoration: none;
         border-top: none;
-        border-bottom: 3px solid #F2F2F2;
         box-sizing: border-box;
+}
 
-    }
-
-    header nav ul a:hover {
+    header nav li:hover {
         color: #0065FC;
         border-top: none;
         border-bottom: 3px solid #0065FC;
+        padding: 20px 0;
+    }
+    header nav li a:hover {
+        border-top: none;  
     }
 
     /* RESPONSIVE FORMULAIRE */
     #texte_formulaire {
         margin-top: 10%;
         margin-bottom: 10%;
+        font-size: 90%;
     }
 
     #formulaire {
@@ -835,20 +831,14 @@ footer nav li {
         display: none;
     }
 
-    input[type="search"] {
-        width: 70%;
-    }
-
-    button {
+    #formulaire button {
         border-radius: 15px;
-        padding: 14px 15px 14px 15px;
+        padding: 16px 17px 16px 17px;  
     }
 
     #position {
-        padding: 14px 15px 14px 15px;
+        padding: 16px 20px 16px 20px;  
     }
-
-    ;
 
     .mobile {
         margin-right: 90%;
@@ -860,12 +850,14 @@ footer nav li {
         display: flex;
         flex-direction: column-reverse;
         margin-bottom: 0;
+        
     }
 
     #populaires {
         width: auto;
         border-radius: 0px;
         margin: 0;
+        padding: 4%;
     }
 
     #hebergement {
@@ -875,15 +867,12 @@ footer nav li {
     }
 
     #cartes_hebergements {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        width: 100%;
+        
+    } 
 
     .card {
-        flex: none;
-        width: 100%;
-        margin-bottom: 5%;
+       flex : 0 0 100%;
     }
 
     .card2 a {
@@ -899,34 +888,44 @@ footer nav li {
 
     #activites {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
         align-items: center;
         width: 100%;
         height: auto;
     }
 
     .card3-image {
-        height: 15vh;
+        height: 35vh;
     }
 
+    #bloc-gauche, #bloc-droite {
+        width:100%;
+        margin-bottom: 5%;
+        align-items: center;
+    }
+    .card-activites{
+        margin-bottom: 5%;
+    }
     .card-activites:nth-child(n) {
         width: 100%;
+        margin-right:0% ;
     }
 
-    .card3-nom h5 {
+   /*  .card3-nom h5 {
         padding-left: 2vw;
         font-weight: 600;
 
-    }
+    } */
 
     /*RESPONSIVE FOOTER*/
     #bas_page {
         display: flex;
         flex-direction: column;
         margin-bottom: 5vh;
+     
     }
 
     footer nav {
-        width: 100%;
+        width: 93%;
     }
 }
