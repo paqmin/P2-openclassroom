@@ -25,7 +25,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 40px;
-       
+
     }
 
     header nav ul {
@@ -33,7 +33,7 @@
         list-style-type: none;
         padding-inline-start: 0%;
         width: 100%;
-   
+
     }
 
     header nav li {
@@ -44,12 +44,12 @@
         border-bottom: 3px solid #F2F2F2;
     }
 
-header nav ul a {
-        
+    header nav ul a {
+
         text-decoration: none;
         border-top: none;
         box-sizing: border-box;
-}
+    }
 
     header nav li:hover {
         color: #0065FC;
@@ -57,8 +57,9 @@ header nav ul a {
         border-bottom: 3px solid #0065FC;
         padding: 20px 0;
     }
+
     header nav li a:hover {
-        border-top: none;  
+        border-top: none;
     }
 
     /* RESPONSIVE FORMULAIRE */
@@ -82,11 +83,11 @@ header nav ul a {
 
     #formulaire button {
         border-radius: 15px;
-        padding: 16px 17px 16px 17px;  
+        padding: 16px 17px 16px 17px;
     }
 
     #position {
-        padding: 16px 20px 16px 20px;  
+        padding: 16px 20px 16px 20px;
     }
 
     .mobile {
@@ -99,7 +100,7 @@ header nav ul a {
         display: flex;
         flex-direction: column-reverse;
         margin-bottom: 0;
-        
+
     }
 
     #populaires {
@@ -117,11 +118,11 @@ header nav ul a {
 
     #cartes_hebergements {
         width: 100%;
-        
-    } 
+
+    }
 
     .card {
-       flex : 0 0 100%;
+        flex: 0 0 100%;
     }
 
     .card2 a {
@@ -144,34 +145,30 @@ header nav ul a {
     }
 
     .card3-image {
-        height: 35vh;
+        height: 25vh;
     }
 
     #bloc-gauche, #bloc-droite {
-        width:100%;
+        width: 100%;
         margin-bottom: 5%;
         align-items: center;
     }
-    .card-activites{
+
+    .card-activites {
         margin-bottom: 5%;
     }
+
     .card-activites:nth-child(n) {
         width: 100%;
-        margin-right:0% ;
+        margin-right: 0%;
     }
-
-   /*  .card3-nom h5 {
-        padding-left: 2vw;
-        font-weight: 600;
-
-    } */
 
     /*RESPONSIVE FOOTER*/
     #bas_page {
         display: flex;
         flex-direction: column;
         margin-bottom: 5vh;
-     
+
     }
 
     footer nav {
