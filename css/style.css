@@ -189,15 +189,17 @@ input[type="search"]::placeholder {
 
 .boutons {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     border: 2px solid #dad8d8;
+    border-left: none;
     border-radius: 30px 30px 30px 30px;
     height: 46px;
     margin-left: 0px;
     margin-right: 2.25%;
     margin-top: 5px;
     padding-right: 20px;
+    padding-left: 0px;
     box-sizing: content-box;
     background-color: #fff;
     font-weight: 600;
@@ -209,32 +211,33 @@ input[type="search"]::placeholder {
     color: #FFF;
 }
 
-.moncercle {
+#filtres_boutons button i {
     display: flex;
-    position: relative;
+    /* position: relative; */
     background: #deebff;
     border-radius: 50%;
     width: 52px;
     height: 52px;
-    right: 8px;
+    
     justify-content: center;
     align-items: center;
 }
 
 #filtres .boutons i {
     color: #0065FC;
-    position: absolute;
+    /* position: absolute; */
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 
-#filtres input {
+/* #filtres input {
     font-weight: bold;
     background-color: #FFF;
     border: none;
     padding-left: 10px;
     overflow: hidden;
-}
+} */
 
 .info {
     display: inline-flex;
@@ -420,7 +423,7 @@ input[type="search"]::placeholder {
 
 .card2-body {
     display: flex;
-    padding: 2%;
+    padding: 3%;
     flex-flow: column nowrap;
     justify-content: space-between;
 }
@@ -572,8 +575,7 @@ footer nav a {
 }
 
 footer ul {
-    padding-left: O;
-    -webkit-padding-start: 0;
+    padding: 0 0 0 0; 
     list-style-type: none;
     font-size: 13px;
 }
@@ -586,346 +588,5 @@ footer nav li {
     padding-bottom: 15px;
 }
 
-/*REPONSIVE DESIGN TABLET*/
 
-@media all and (min-width:769px) and (max-width:992px) {
-    #bloc2 {
-        display: flex;
-        flex-direction: column-reverse;
-    }
 
-    #populaires {
-        margin-bottom: 2%;
-        width: auto;
-    }
-
-    #cartes-populaires {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-#card a{
-    font-size: 100%;
-}
-    .card2 {
-        width: 30%;
-        background-color: white;
-        box-shadow: 2px 2px 20px rgb(226, 223, 223);
-        border-radius: 20px;
-    }
-
-    .card2 a {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        color: #333;
-        text-decoration: none;
-        min-height: 210px;
-        font-size: 100%;
-    }
-
-    .card2-image {
-        overflow: hidden;
-        flex: 0 0 55%;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-        border: 5px solid #FFF;
-        box-sizing: border-box;
-
-    }
-
-    .card2-image img {
-        height: auto;
-        filter: grayscale(0);
-        min-height: 100%;
-        max-width: 120%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .card2-body {
-        font-size: 85%;
-        display: flex;
-        padding: 2% 4% 2%;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-    }
-
-    .card2-body h4 {
-        margin: 0;
-        ;
-    }
-
-    #hebergement {
-        background: #fff;
-        margin: 0%;
-        padding: 2%;
-        width: auto;
-    }
-
-    #cartes_hebergements {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-    }
-
-    /*BLOC 3*/
-    #bloc3 {
-        padding: 0% 2%;
-        margin-top: 0%;
-        font-size: 85%;
-    }
-
-    #activites {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: auto;
-        width: auto;
-
-    }
-
-    #bloc-gauche, #bloc-droite {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 0;
-    }
-
-    .card-activites {
-        height: 210px;
-        background-color: white;
-        box-shadow: 2px 2px 20px rgb(226, 223, 223);
-        border-radius: 20px;
-    }
-
-    .card-activites a {
-        display: flex;
-        flex-direction: column;
-        color: #333;
-        text-decoration: none;
-       
-    }
-
-    .card3-image {
-        overflow: hidden;
-        height: 80%;
-        position: r6elative;
-        border-radius: 20px 20px 0px 0px;
-        border: 5px solid #FFF;
-        box-sizing: border-box;
-        flex-basis: auto;
-    }
-
-    .card3-image img {
-        height: auto;
-        filter: grayscale(0);
-        width: 120%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .card-activites:nth-child(n), #bloc-gauche .card-activites:nth-child(2), #bloc-droite .card-activites:nth-child(2) {
-        flex: 0 0 30%;
-        margin: 0 0 4%;
-    }
-
-    .card3-nom {
-        height: auto;
-    }
-    #bas_page{
-        padding: 0 6%;
-    }
-}
-
-/*RESPONSIVE DESIGN MOBILE*/
-@media all and (max-width: 768px) {
-
-    #container, main {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        margin-bottom: 5%;
-    }
-
-    #bloc1 {
-        margin: 4%;
-    }
-
-    /* RESPONSIVE HEADER */
-
-    #logo {
-        padding: 0%;
-        margin: 0;
-
-    }
-
-    header nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-       
-    }
-
-    header nav ul {
-        display: flex;
-        list-style-type: none;
-        padding-inline-start: 0%;
-        width: 100%;
-   
-    }
-
-    header nav li {
-        margin: 0;
-        width: 50%;
-        text-align: center;
-        padding: 20px 0;
-        border-bottom: 3px solid #F2F2F2;
-    }
-
-header nav ul a {
-        
-        text-decoration: none;
-        border-top: none;
-        box-sizing: border-box;
-}
-
-    header nav li:hover {
-        color: #0065FC;
-        border-top: none;
-        border-bottom: 3px solid #0065FC;
-        padding: 20px 0;
-    }
-    header nav li a:hover {
-        border-top: none;  
-    }
-
-    /* RESPONSIVE FORMULAIRE */
-    #texte_formulaire {
-        margin-top: 10%;
-        margin-bottom: 10%;
-        font-size: 90%;
-    }
-
-    #formulaire {
-        width: 100%;
-    }
-
-    .cacher {
-        display: inline;
-    }
-
-    button:after {
-        display: none;
-    }
-
-    #formulaire button {
-        border-radius: 15px;
-        padding: 16px 17px 16px 17px;  
-    }
-
-    #position {
-        padding: 16px 20px 16px 20px;  
-    }
-
-    .mobile {
-        margin-right: 90%;
-    }
-
-    /*RESPONSIVE BLOC 2*/
-
-    #bloc2 {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-bottom: 0;
-        
-    }
-
-    #populaires {
-        width: auto;
-        border-radius: 0px;
-        margin: 0;
-        padding: 4%;
-    }
-
-    #hebergement {
-        width: auto;
-        background: #ffffff;
-        padding: 4%;
-    }
-
-    #cartes_hebergements {
-        width: 100%;
-        
-    } 
-
-    .card {
-       flex : 0 0 100%;
-    }
-
-    .card2 a {
-        width: 100%;
-        margin-bottom: 5%;
-    }
-
-    /*RESPONSIVE BLOC 3*/
-    #bloc3 {
-        margin-top: 0;
-        padding: 4%;
-    }
-
-    #activites {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
-
-    .card3-image {
-        height: 35vh;
-    }
-
-    #bloc-gauche, #bloc-droite {
-        width:100%;
-        margin-bottom: 5%;
-        align-items: center;
-    }
-    .card-activites{
-        margin-bottom: 5%;
-    }
-    .card-activites:nth-child(n) {
-        width: 100%;
-        margin-right:0% ;
-    }
-
-   /*  .card3-nom h5 {
-        padding-left: 2vw;
-        font-weight: 600;
-
-    } */
-
-    /*RESPONSIVE FOOTER*/
-    #bas_page {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 5vh;
-     
-    }
-
-    footer nav {
-        width: 93%;
-    }
-}

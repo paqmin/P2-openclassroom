@@ -12,44 +12,60 @@
     }
 
     /* RESPONSIVE HEADER */
+
+    #logo {
+        padding: 0%;
+        margin: 0;
+
+    }
+
     header nav {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        margin-top: 40px;
+       
     }
 
     header nav ul {
         display: flex;
         list-style-type: none;
         padding-inline-start: 0%;
-        justify-content: space-between;
         width: 100%;
-        margin-top: 8%;
+   
     }
 
     header nav li {
         margin: 0;
-    }
-
-    header nav ul a {
-        font-size: 15px;
-        color: #181818;
-        padding: 20px 60px 10px 60px;
-        text-decoration: none;
-        border-top: none;
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
         border-bottom: 3px solid #F2F2F2;
     }
 
-    header nav ul a:hover {
+header nav ul a {
+        
+        text-decoration: none;
+        border-top: none;
+        box-sizing: border-box;
+}
+
+    header nav li:hover {
         color: #0065FC;
         border-top: none;
         border-bottom: 3px solid #0065FC;
+        padding: 20px 0;
+    }
+    header nav li a:hover {
+        border-top: none;  
     }
 
     /* RESPONSIVE FORMULAIRE */
     #texte_formulaire {
         margin-top: 10%;
         margin-bottom: 10%;
+        font-size: 90%;
     }
 
     #formulaire {
@@ -64,13 +80,13 @@
         display: none;
     }
 
-    input[type="search"] {
-        width: 70%;
+    #formulaire button {
+        border-radius: 15px;
+        padding: 16px 17px 16px 17px;  
     }
 
-    button {
-        border-radius: 15px;
-        left: 300px;
+    #position {
+        padding: 16px 20px 16px 20px;  
     }
 
     .mobile {
@@ -83,29 +99,29 @@
         display: flex;
         flex-direction: column-reverse;
         margin-bottom: 0;
+        
     }
 
     #populaires {
+        width: auto;
         border-radius: 0px;
         margin: 0;
+        padding: 4%;
     }
 
     #hebergement {
+        width: auto;
         background: #ffffff;
         padding: 4%;
     }
 
     #cartes_hebergements {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
+        width: 100%;
+        
+    } 
 
     .card {
-        width: 100%;
-        margin-bottom: 5%;
+       flex : 0 0 100%;
     }
 
     .card2 a {
@@ -121,34 +137,44 @@
 
     #activites {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
         align-items: center;
         width: 100%;
         height: auto;
     }
 
     .card3-image {
-        height: 15vh;
+        height: 35vh;
     }
 
+    #bloc-gauche, #bloc-droite {
+        width:100%;
+        margin-bottom: 5%;
+        align-items: center;
+    }
+    .card-activites{
+        margin-bottom: 5%;
+    }
     .card-activites:nth-child(n) {
         width: 100%;
+        margin-right:0% ;
     }
 
-    .card3-nom h5 {
+   /*  .card3-nom h5 {
         padding-left: 2vw;
         font-weight: 600;
-     
-    }
+
+    } */
 
     /*RESPONSIVE FOOTER*/
     #bas_page {
         display: flex;
         flex-direction: column;
         margin-bottom: 5vh;
+     
     }
 
     footer nav {
-        width: 100%;
+        width: 93%;
     }
 }

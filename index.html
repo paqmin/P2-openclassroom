@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
    <title>P2 - Mahalia</title>
@@ -7,8 +7,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
    <link rel="stylesheet" type="text/css" href="css/normalize.css">
    <link rel="stylesheet" type="text/css" href="css/style.css">
-   <!--  <link rel="stylesheet" type="text/css" media=" (min-device-width:768px) and (max-device-width:992px)" href="css/tablettes.css" />
-   <link rel="stylesheet" type="text/css" media=" (max-width:768px)" href="css/petite_resolution.css" /> -->
+   <link rel="stylesheet" type="text/css" media=" (min-width:768px) and (max-width:992px)" href="css/tablettes.css" />
+   <link rel="stylesheet" type="text/css" media=" (max-width:768px)" href="css/petite_resolution.css" />
    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/favicon/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon/favicon-32x32.png">
    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon/favicon-16x16.png">
@@ -27,8 +27,8 @@
          <nav id="menu">
             <a href="index.html"><img id="logo" src="images/logo/Booki@3x.png" alt="logoBooki" /></a>
             <ul>
-               <li><a href="#">Hébergements</a></li>
-               <li><a href="#">Activités</a></li>
+               <li><a href="#hebergement">Hébergements</a></li>
+               <li><a href="#activites">Activités</a></li>
             </ul>
          </nav>
       </header>
@@ -54,33 +54,25 @@
                <div id="filtres_boutons">
                   <h2 class="mobile">Filtres</h2>
                   <button class="boutons">
-                     <div class="moncercle">
-                        <i class="fa-solid fa-money-bill-1-wave fa-xl"></i>
-                     </div>
+                     <i class="fa-solid fa-money-bill-1-wave fa-xl"></i>
                      Économique
                   </button>
                   <button class="boutons">
-                     <div class="moncercle">
-                        <i class="fa-solid fa-child fa-xl"></i>
-                     </div>
+                     <i class="fa-solid fa-child fa-xl"></i>
                      Familial
                   </button>
                   <button class="boutons">
-                     <div class="moncercle">
-                        <i class="fa-solid fa-heart fa-xl"></i>
-                     </div>
+                     <i class="fa-solid fa-heart fa-xl"></i>
                      Romantique
                   </button>
                   <button class="boutons">
-                     <div class="moncercle">
-                        <i class="fa-solid fa-dog fa-xl"></i>
-                     </div>
+                     <i class="fa-solid fa-dog fa-xl"></i>
                      Animaux autorisés
-               </div>
-               </button>
-               <div class="info">
-                  <div class="moncerclegris"><i class="fa-solid fa-info fa-2xs"></i></div>
-                  <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                  </button>
+                  <div class="info">
+                     <div class="moncerclegris"><i class="fa-solid fa-info fa-2xs"></i></div>
+                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                  </div>
                </div>
             </div>
          </section>
@@ -88,7 +80,7 @@
          <section id="bloc2">
             <section id="hebergement">
                <h1>Hébergements à Marseille</h1>
-               <div id="cartes_hebergements">
+               <section id="cartes_hebergements">
                   <!--Auberge cannebiere-->
                   <div class="card">
                      <a href="#">
@@ -97,16 +89,16 @@
                            <picture>
                               <!-- ordi-->
                               <source type="image/jpg" media="(min-width:992px)"
-                                 srcset="images/hebergements/cannebiere-xlarge.jpg,">
+                                 srcset="images/hebergements/cannebiere-xlarge.jpg">
                               <!-- tablettes-->
                               <source type="image/jpg" media="(min-width:768px) and (max-width:992px)"
-                                 srcset="images/hebergements/cannebiere-large.jpg,">
+                                 srcset="images/hebergements/cannebiere-large.jpg">
                               <!-- mobile-large-->
                               <source type="image/jpg" media="(min-width:320px) and (max-width:768px)"
-                                 srcset="images/hebergements/cannebiere-medium.jpg,">
+                                 srcset="images/hebergements/cannebiere-medium.jpg">
                               <!-- mobile-petit-->
                               <source type="image/jpg" media="(max-width:320px)"
-                                 srcset="images/hebergements/cannebiere-small.jpg,">
+                                 srcset="images/hebergements/cannebiere-small.jpg">
                               <img class="object-fit-norm" src="images/hebergements/cannebiere-large.jpg"
                                  alt="auberge_cannebiere">
                            </picture>
@@ -309,10 +301,10 @@
                         </div>
                      </a>
                   </div>
-               </div>
+               </section>
                <h4><a href="#">Afficher plus</a></h4>
-
             </section>
+            <!-- ASIDE LES PLUS POPULAIRES -->
             <aside id="populaires">
                <div class="titre-populaire">
                   <h1>Les plus populaires</h1>
@@ -343,10 +335,10 @@
                         </div>
                         <!-- Corps de la carte -->
                         <div class="card2-body">
-                           <span>
+                           <div>
                               <h4>Hôtel Le soleil du matin</h4>
-                              <p>Nuit à partir de <strong>120€</strong></p>
-                           </span>
+                              Nuit à partir de <strong>120€</strong>
+                           </div>
                            <div class="card-note">
                               <i class="fa-solid fa-star fa-xs"></i>
                               <i class="fa-solid fa-star fa-xs"></i>
@@ -380,12 +372,10 @@
                         </div>
                         <!-- Corps de la carte -->
                         <div class="card2-body">
-
-                           <span>
+                           <div>
                               <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                              <p>Nuit à partir de <strong>72€</strong></p>
-                           </span>
-
+                              Nuit à partir de <strong>72€</strong>
+                           </div>
                            <!-- Note -->
                            <div class="card-note">
                               <i class="fa-solid fa-star fa-xs"></i>
@@ -413,7 +403,7 @@
                               <source type="image/jpg" media="(min-width:320px) and (max-width:768px)"
                                  srcset="images/hebergements/bleu-blanc-medium.jpg">
                               <source type="image/jpg" media="(max-width:320px)"
-                                 srcset="images/hebergements/bleu-blanc-small.jpg,">
+                                 srcset="images/hebergements/bleu-blanc-small.jpg">
 
                               <img class="object-fit-norm" src="images/hebergements/bleu-blanc-large.jpg"
                                  alt="hotel_tout_bleu_et_blanc">
@@ -422,10 +412,10 @@
 
                         <!-- Corps de la carte -->
                         <div class="card2-body">
-                           <span>
+                           <div>
                               <h4> Hôtel Tout bleu et Blanc</h4>
-                              <p>Nuit à partir de <strong>68€</strong></p>
-                           </span>
+                              Nuit à partir de <strong>68€</strong>
+                           </div>
                            <!-- Note -->
                            <div class="card-note">
                               <i class="fa-solid fa-star fa-xs"></i>
@@ -443,7 +433,7 @@
          </section>
          <section id="bloc3">
             <h1>Activités à Marseille</h1>
-            <section id="activites">
+            <div id="activites">
                <section id="bloc-gauche">
                   <!--  VIEUX PORT -->
                   <a class="card-activites" href="#">
@@ -458,7 +448,7 @@
                            <source type="image/jpg" media="(min-width:320px) and (max-width:768px)"
                               srcset="images/activites/vieux-port-medium.jpg">
                            <source type="image/jpg" media="(max-width:320px)"
-                              srcset="images/hebergements/vieux-port-small.jpg,">
+                              srcset="images/hebergements/vieux-port-small.jpg">
 
                            <img src="images/activites/vieux-port-large.jpg" alt="vieux-port">
                         </picture>
@@ -501,7 +491,7 @@
                            <source type="image/jpg" media="(min-width:320px) and (max-width:768px)"
                               srcset="images/activites/frioul-medium.jpg">
                            <source type="image/jpg" media="(max-width:320px)"
-                              srcset="images/hebergements/frioul-small.jpg,">
+                              srcset="images/hebergements/frioul-small.jpg">
                            <img class="object-fit-norm" src="images/activites/frioul-large.jpg" alt="iles-du-frioul">
                         </picture>
                      </div>
@@ -572,35 +562,37 @@
                      <h4 class="card3-nom">Parc Longchamp</h4>
                   </a>
                </section>
-            </section>
+            </div>
          </section>
       </main>
    </div>
    <footer>
-      <section id="bas_page">
+      <div id="bas_page">
          <nav>
+            <h3>A propos</h3>
             <ul>
-               <h3>A propos</h3>
                <li><a href="#">Fonctionnement du site</a></li>
                <li><a href="#">Conditiones générales de vente</a></li>
                <li><a href="#">Données et confidentialité</a></li>
             </ul>
          </nav>
          <nav>
+
+            <h3>Nos hébergements</h3>
             <ul>
-               <h3>Nos hébergements</h3>
                <li><a href="#">Charte qualité</a></li>
                <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
          </nav>
          <nav>
+
+            <h3>Assistance</h3>
             <ul>
-               <h3>Assistance</h3>
                <li><a href="#">Centre d'aide</a></li>
                <li><a href="#">Nous contacter</a></li>
             </ul>
          </nav>
-      </section>
+      </div>
    </footer>
 </body>
 
