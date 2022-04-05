@@ -99,13 +99,13 @@ header nav li {
     margin-top: 45px;
 }
 
-header nav ul a {
+header nav li a {
     color: #181818;
     padding: 50px 1.75vw 0;
     text-decoration: none;
 }
 
-header nav ul a:hover {
+header nav li a:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
