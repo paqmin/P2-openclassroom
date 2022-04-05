@@ -113,14 +113,13 @@ header nav ul a:hover {
 /*MAIN*/
 /* SECTION BLOC 1 */
 
-#formulaire {
+form{
     display: flex;
     align-items: center;
     align-content: center;
     height: 55px;
     margin: 2% 0;
 }
-
 #texte_formulaire p, #texte_formulaire h1 {
     margin: 11px 0px;
 }
@@ -130,7 +129,6 @@ header nav ul a:hover {
 }
 
 #position {
-    position: relative;
     padding: 16px 20px 16px 20px;
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
@@ -140,7 +138,6 @@ header nav ul a:hover {
 }
 
 input[type="search"] {
-    position: relative;
     padding: 15px 0px 15px 15px;
     border-top: 1px solid #F2F2F2;
     border-right: 1px transparent solid;
@@ -154,8 +151,7 @@ input[type="search"]::placeholder {
     font-weight: 600;
 }
 
-#formulaire button {
-    position: absolute;
+form button {
     padding: 16px 15px 16px 15px;
     color: #F2F2F2;
     border: none;
@@ -164,23 +160,25 @@ input[type="search"]::placeholder {
     justify-self: center;
 }
 
-#formulaire button:after {
+form button:after {
     content: " Rechercher";
     font-weight: 550;
 }
 
-#formulaire button:hover, #formulaire button:focus {
+form button:hover, form button:focus {
     outline: none;
     background-color: #4c4c4c;
     color: #FFF;
 }
-
 .cacher {
     display: none;
 }
 
 /*FILTRES*/
-
+#filtres{
+    display: flex;
+    flex-direction: column;
+}
 #filtres_boutons {
     display: flex;
     flex-direction: row;
