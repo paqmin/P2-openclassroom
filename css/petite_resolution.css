@@ -124,7 +124,9 @@
     .card {
         flex: 0 0 100%;
     }
-
+    .card2{
+        margin-bottom: 0;
+    }
     .card2 a {
         width: 100%;
         margin-bottom: 5%;
