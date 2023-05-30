@@ -4,12 +4,12 @@ L'objectif de ce projet était de réaliser l’intégration html/css des nouvel
 
 ## Spécifications techniques
 
-● Réalisation de 2 maquettes : desktop first + mobile et devra s'adapter aux tablettes ;
-● Utilisation de la bibliothèque Font Awesome pour les icônes ;
-● Utilisation de Flexbox ;
-● Pas de framework CSS ;
-● Utilisation des balises sémantiques ;
-● Validation du code W3C html et CSS
+- Réalisation de 2 maquettes : desktop first + mobile et devra s'adapter aux tablettes ;
+- Utilisation de la bibliothèque Font Awesome pour les icônes ;
+- Utilisation de Flexbox ;
+- Pas de framework CSS ;
+- Utilisation des balises sémantiques ;
+- Validation du code W3C html et CSS
 
 ## Spécifications fonctionnelles
 
